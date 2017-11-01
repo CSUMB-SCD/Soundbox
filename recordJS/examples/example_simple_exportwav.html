@@ -8,6 +8,10 @@
     ul { list-style: none; }
     #recordingslist audio { display: block; margin-bottom: 10px; }
   </style>
+  
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
 </head>
 <body>
 
@@ -56,7 +60,7 @@
   
     __log('Recording...');
     
-    setTimeout(stopRecord, 5000);
+    setTimeout(stopRecord, 10000);
     console.log("After five seconds");
   }
   
@@ -64,6 +68,7 @@
   {
     recorder && recorder.stop();
       createDownloadLink();
+      uploadAudio();
     
     recorder.clear();
   }
@@ -77,9 +82,38 @@
     
     // create WAV download link using audio data blob
     createDownloadLink();
-    
     recorder.clear();
   }
+  
+  	function uploadAudio()
+  	{
+  	  recorder && recorder.exportWAV(function(blob)
+  	  {
+  	   var url = (window.URL || window.webkitURL).createObjectURL(blob);
+      console.log(url);
+
+      var data = new FormData();
+      data.append('file', blob);
+
+      $.ajax({
+        url :  "https://soundbox-dmolina93.c9users.io/recordJS/examples/upload.php",
+        type: 'POST',
+        data: data,
+        contentType: false,
+        processData: false,
+        success: function(data) {
+          alert("Response was successfull!");
+          console.log("data: " + data);
+        },    
+        error: function() {
+          alert("There was an error!");
+        }
+      });	 
+  	    
+  	  }, "audio/mp3");
+      
+  	}
+
 
   function createDownloadLink() {
     recorder && recorder.exportWAV(function(blob) {
@@ -96,7 +130,11 @@
       li.appendChild(au);
       li.appendChild(hf);
       recordingslist.appendChild(li);
+      
+      
     }, "audio/mp3");
+    
+  
   }
 
   window.onload = function init() {
