@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Live input record and playback</title>
+	<title>SoundBox</title>
   <style type='text/css'>
     ul { list-style: none; }
     #recordingslist audio { display: block; margin-bottom: 10px; }
@@ -15,15 +15,12 @@
 </head>
 <body>
 
-  <h1>Record audio</h1>
+  <h1>Detect Song</h1>
 
-  <p>Make sure you are using a recent version of Google Chrome.</p>
-  <p>Also before you enable microphone input either plug in headphones or turn the volume down if you want to avoid ear splitting feedback!</p>
+  <button id = "start" onclick="startRecording(this);">Detect Song</button>
 
-  <button id = "start" onclick="startRecording(this);">record</button>
-  <button id = "stop" onclick="stopRecording(this);" disabled>stop</button>
   
-  <h2>Recordings</h2>
+  <h2>Recently Identified Songs</h2>
   <ul id="recordingslist"></ul>
   
   <h2>Log</h2>
@@ -60,11 +57,11 @@
   
     __log('Recording...');
     
-    setTimeout(stopRecord, 13000);
+    setTimeout(stopRecording, 13000);
     console.log("After five seconds");
   }
   
-  function stopRecord()
+  function stopRecording()
   {
     recorder && recorder.stop();
     var button = document.getElementById("start");
@@ -100,7 +97,7 @@
       data.append('file', blob);
 
       $.ajax({
-        url :  "https://soundbox-dmolina93.c9users.io/Sound-Recognition/upload2.php",
+        url :  "upload2.php",
         type: 'POST',
         data: data,
         contentType: false,
