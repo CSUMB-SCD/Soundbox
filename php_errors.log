@@ -1,0 +1,156 @@
+[02-Nov-2017 03:43:27 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 50
+[02-Nov-2017 03:43:27 UTC] PHP Stack trace:
+[02-Nov-2017 03:43:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:43:27 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:50
+[02-Nov-2017 03:43:27 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 51
+[02-Nov-2017 03:43:27 UTC] PHP Stack trace:
+[02-Nov-2017 03:43:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:43:27 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:51
+[02-Nov-2017 03:44:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 50
+[02-Nov-2017 03:44:40 UTC] PHP Stack trace:
+[02-Nov-2017 03:44:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:44:40 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:50
+[02-Nov-2017 03:44:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 51
+[02-Nov-2017 03:44:40 UTC] PHP Stack trace:
+[02-Nov-2017 03:44:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:44:40 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:51
+[02-Nov-2017 03:47:37 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 61
+[02-Nov-2017 03:47:37 UTC] PHP Stack trace:
+[02-Nov-2017 03:47:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:47:37 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:61
+[02-Nov-2017 03:47:37 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 62
+[02-Nov-2017 03:47:37 UTC] PHP Stack trace:
+[02-Nov-2017 03:47:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:47:37 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:62
+[02-Nov-2017 03:47:45 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 61
+[02-Nov-2017 03:47:45 UTC] PHP Stack trace:
+[02-Nov-2017 03:47:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:47:45 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:61
+[02-Nov-2017 03:47:45 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 62
+[02-Nov-2017 03:47:45 UTC] PHP Stack trace:
+[02-Nov-2017 03:47:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:47:45 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:62
+[02-Nov-2017 03:48:32 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 61
+[02-Nov-2017 03:48:32 UTC] PHP Stack trace:
+[02-Nov-2017 03:48:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:48:32 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:61
+[02-Nov-2017 03:48:32 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 62
+[02-Nov-2017 03:48:32 UTC] PHP Stack trace:
+[02-Nov-2017 03:48:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:48:32 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:62
+[02-Nov-2017 03:51:06 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 61
+[02-Nov-2017 03:51:06 UTC] PHP Stack trace:
+[02-Nov-2017 03:51:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:51:06 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:61
+[02-Nov-2017 03:51:06 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 62
+[02-Nov-2017 03:51:06 UTC] PHP Stack trace:
+[02-Nov-2017 03:51:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 03:51:06 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:62
+[02-Nov-2017 04:08:46 UTC] PHP Warning:  unlink(song.mp3): No such file or directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 81
+[02-Nov-2017 04:08:46 UTC] PHP Stack trace:
+[02-Nov-2017 04:08:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:08:46 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:81
+[02-Nov-2017 04:10:17 UTC] PHP Warning:  unlink(song.mp3): No such file or directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 81
+[02-Nov-2017 04:10:17 UTC] PHP Stack trace:
+[02-Nov-2017 04:10:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:10:17 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:81
+[02-Nov-2017 04:13:26 UTC] PHP Warning:  unlink(song.mp3): No such file or directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 34
+[02-Nov-2017 04:13:26 UTC] PHP Stack trace:
+[02-Nov-2017 04:13:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:13:26 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:34
+[02-Nov-2017 04:28:40 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 34
+[02-Nov-2017 04:28:40 UTC] PHP Stack trace:
+[02-Nov-2017 04:28:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:28:40 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:34
+[02-Nov-2017 04:28:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 62
+[02-Nov-2017 04:28:40 UTC] PHP Stack trace:
+[02-Nov-2017 04:28:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:28:40 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:62
+[02-Nov-2017 04:30:03 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 34
+[02-Nov-2017 04:30:03 UTC] PHP Stack trace:
+[02-Nov-2017 04:30:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:30:03 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:34
+[02-Nov-2017 04:30:03 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 62
+[02-Nov-2017 04:30:03 UTC] PHP Stack trace:
+[02-Nov-2017 04:30:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:30:03 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:62
+[02-Nov-2017 04:30:05 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 34
+[02-Nov-2017 04:30:05 UTC] PHP Stack trace:
+[02-Nov-2017 04:30:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:30:05 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:34
+[02-Nov-2017 04:30:05 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 62
+[02-Nov-2017 04:30:05 UTC] PHP Stack trace:
+[02-Nov-2017 04:30:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:30:05 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:62
+[02-Nov-2017 04:36:18 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 56
+[02-Nov-2017 04:36:18 UTC] PHP Stack trace:
+[02-Nov-2017 04:36:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:41:22 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 34
+[02-Nov-2017 04:41:22 UTC] PHP Stack trace:
+[02-Nov-2017 04:41:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:41:22 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:34
+[02-Nov-2017 04:41:22 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 63
+[02-Nov-2017 04:41:22 UTC] PHP Stack trace:
+[02-Nov-2017 04:41:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:41:22 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:63
+[02-Nov-2017 04:48:42 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 34
+[02-Nov-2017 04:48:42 UTC] PHP Stack trace:
+[02-Nov-2017 04:48:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:48:42 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:34
+[02-Nov-2017 04:48:42 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 63
+[02-Nov-2017 04:48:42 UTC] PHP Stack trace:
+[02-Nov-2017 04:48:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 04:48:42 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:63
+[02-Nov-2017 05:05:14 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 26
+[02-Nov-2017 05:05:14 UTC] PHP Stack trace:
+[02-Nov-2017 05:05:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 05:05:14 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:26
+[02-Nov-2017 05:05:14 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 55
+[02-Nov-2017 05:05:14 UTC] PHP Stack trace:
+[02-Nov-2017 05:05:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 05:05:14 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:55
+[02-Nov-2017 05:06:33 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 26
+[02-Nov-2017 05:06:33 UTC] PHP Stack trace:
+[02-Nov-2017 05:06:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 05:06:33 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:26
+[02-Nov-2017 05:06:33 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 55
+[02-Nov-2017 05:06:33 UTC] PHP Stack trace:
+[02-Nov-2017 05:06:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 05:06:33 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:55
+[02-Nov-2017 05:08:03 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 26
+[02-Nov-2017 05:08:03 UTC] PHP Stack trace:
+[02-Nov-2017 05:08:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 05:08:03 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:26
+[02-Nov-2017 05:12:53 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 55
+[02-Nov-2017 05:12:53 UTC] PHP Stack trace:
+[02-Nov-2017 05:12:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 05:12:53 UTC] PHP   2. array_values() /home/ubuntu/workspace/Sound-Recognition/upload.php:55
+[02-Nov-2017 05:40:31 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/Sound-Recognition/ACRCloud.php on line 11
+[02-Nov-2017 05:40:31 UTC] PHP Stack trace:
+[02-Nov-2017 05:40:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload2.php:0
+[02-Nov-2017 05:40:31 UTC] PHP   2. ACRCloud->__construct() /home/ubuntu/workspace/Sound-Recognition/upload2.php:4
+[02-Nov-2017 05:41:59 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/Sound-Recognition/ACRCloud.php on line 11
+[02-Nov-2017 05:41:59 UTC] PHP Stack trace:
+[02-Nov-2017 05:41:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload2.php:0
+[02-Nov-2017 05:41:59 UTC] PHP   2. ACRCloud->__construct() /home/ubuntu/workspace/Sound-Recognition/upload2.php:4
+[02-Nov-2017 05:44:48 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/Sound-Recognition/ACRCloud.php on line 72
+[02-Nov-2017 05:44:48 UTC] PHP Stack trace:
+[02-Nov-2017 05:44:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload2.php:0
+[02-Nov-2017 05:44:48 UTC] PHP   2. ACRCloud->setSpotifyData() /home/ubuntu/workspace/Sound-Recognition/upload2.php:9
+[02-Nov-2017 05:47:35 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/Sound-Recognition/ACRCloud.php on line 12
+[02-Nov-2017 05:47:35 UTC] PHP Stack trace:
+[02-Nov-2017 05:47:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload2.php:0
+[02-Nov-2017 05:47:35 UTC] PHP   2. ACRCloud->__construct() /home/ubuntu/workspace/Sound-Recognition/upload2.php:4
+[02-Nov-2017 05:48:28 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/Sound-Recognition/ACRCloud.php on line 12
+[02-Nov-2017 05:48:28 UTC] PHP Stack trace:
+[02-Nov-2017 05:48:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload2.php:0
+[02-Nov-2017 05:48:28 UTC] PHP   2. ACRCloud->__construct() /home/ubuntu/workspace/Sound-Recognition/upload2.php:4
+[02-Nov-2017 05:56:51 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/upload.php on line 26
+[02-Nov-2017 05:56:51 UTC] PHP Stack trace:
+[02-Nov-2017 05:56:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload.php:0
+[02-Nov-2017 05:56:51 UTC] PHP   2. unlink() /home/ubuntu/workspace/Sound-Recognition/upload.php:26
+[02-Nov-2017 06:02:34 UTC] PHP Warning:  unlink(recordings/): Is a directory in /home/ubuntu/workspace/Sound-Recognition/ACRCloud.php on line 45
+[02-Nov-2017 06:02:34 UTC] PHP Stack trace:
+[02-Nov-2017 06:02:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload2.php:0
+[02-Nov-2017 06:02:34 UTC] PHP   2. ACRCloud->makeAPICall() /home/ubuntu/workspace/Sound-Recognition/upload2.php:8
+[02-Nov-2017 06:02:34 UTC] PHP   3. unlink() /home/ubuntu/workspace/Sound-Recognition/ACRCloud.php:45
