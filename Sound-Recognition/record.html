@@ -100,7 +100,7 @@
       data.append('file', blob);
 
       $.ajax({
-        url :  "https://soundbox-dmolina93.c9users.io/Sound-Recognition/upload.php",
+        url :  "https://soundbox-dmolina93.c9users.io/Sound-Recognition/upload2.php",
         type: 'POST',
         data: data,
         contentType: false,
@@ -108,9 +108,14 @@
         success: function(data) {
           alert("Response was successfull!");
           console.log("data: " + data);
+          
+         // var result = JSON.parse(data);
+          
+         // console.log("data json object: " + result);
         },    
-        error: function() {
+        error: function(data) {
           alert("There was an error!");
+          console.log("data: " + data);
         }
       });	 
   	    

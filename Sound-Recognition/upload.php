@@ -7,15 +7,6 @@ if(!is_dir("recordings")){
 //	echo "made new recording directory<br><br>";
 }
 
-
-if(!($_FILES['file']['error']))
-{
-    
-    //echo "there is no error in the file uploaded<br><br>";
-}
-
-echo "error: ". $_FILES['file']['error'];
-
 if(isset($_FILES['file']) and !$_FILES['file']['error']){
     $song = "song.mp3";
 
@@ -23,17 +14,18 @@ if(isset($_FILES['file']) and !$_FILES['file']['error']){
    // echo"moved the song succesfully<br>";
 }
 
-$command = escapeshellcmd(" python /home/ubuntu/workspace/ACRCloud/linux/x86-64/python2.7/test.py recordings/" . $song);
-$output = shell_exec($command);
+//$command = escapeshellcmd(" python /home/ubuntu/workspace/ACRCloud/linux/x86-64/python2.7/test.py recordings/" . $song);
+//$output = shell_exec($command);
 
 header("Access-Control-Allow-Origin: *");
+//header("Content-type: application/json");
 
 //echo $output;
- echo $_SESSION['json'] =$output;
+ $_SESSION['json'] = $output;
  
  unlink("recordings/" . $song);
 
-/*
+
 if(!empty($output) || $output != NULL)
     $_SESSION['json'] =$output;
     
@@ -48,12 +40,13 @@ else {
    :100}],\"timestamp_utc\":\"2017-11-01 21:52:45\"},\"result_type\":3}\n\n";
 }
 
-*/
+
 
 $string = str_replace('\n', '', $_SESSION['json']);
 $string = str_replace('\"', '', $_SESSION['json']);
 
-
+echo $string;
+//echo json_decode($string, true);
 $_SESSION['json'] = json_decode($string, true);
 //echo "last error: " . json_last_error() . "<br><br>";
 //echo  "last error message: " . json_last_error_msg() ."<br><br>";
@@ -63,12 +56,11 @@ $array = array_values($_SESSION['json']);
 //print_r(array_values($_SESSION['json']));
 
 $spotify = $array[1]["music"][0]['external_metadata']['spotify'];
-echo"<br><br>";
-print_r($spotify);
 
-echo "<br><br>";
+//print_r($spotify);
+
 $youtube = $array[1]["music"][0]['external_metadata']['youtube'];
-print_r($youtube);
+//print_r($youtube);
 
 
 ?>
