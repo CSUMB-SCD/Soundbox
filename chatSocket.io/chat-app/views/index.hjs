@@ -16,7 +16,7 @@
   
     <h1><center>{{ subTitle }}</center></h1>
     
-    <div id="chat-area"></div>
+    <div id="chat-area" placeholder="Chat area"></div>
   
     <form id="messageForm">
 
@@ -24,6 +24,8 @@
       <br>
       <input type="submit" value="Send Message">
     </form>
+    
+    <div id="numConnected">Number of Connected: </div>
     
     <script>
   
@@ -34,6 +36,7 @@
             var $messageForm = $("#messageForm"); 
             var $message = $("#message"); 
             var $chat = $("#chat-area"); 
+            var $numConnected = $("#numConnected");
             
             $messageForm.submit(function(e) {
                 e.preventDefault(); 
@@ -42,9 +45,13 @@
             }); 
             
             socket.on('new message', function(data) {
-              console.log("here!!!!"); 
               $chat.append('<div>' + data.msg + '</div>'); 
             }); 
+            
+            socket.on('numberOfConections', function(data){
+              console.log("Number of connections: " + data.numberOfConections);
+              $numConnected.html('<div>Number of connections: ' + data.numberOfConections + '</div>'); 
+            });
             
         }); 
     
