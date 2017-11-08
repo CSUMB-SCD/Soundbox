@@ -52,5 +52,8 @@ input{
   border: thin solid black;
   background-color: white;
   padding: 3%;
+  overflow-y: scroll;
+  height: 400px;
+  max-height: 400px;
 }
 
