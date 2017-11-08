@@ -18,3 +18,6 @@
 [02-Nov-2017 23:50:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/Sound-Recognition/upload2.php:0
 [02-Nov-2017 23:50:52 UTC] PHP   2. ACRCloud->makeAPICall() /home/ubuntu/workspace/Sound-Recognition/upload2.php:7
 [02-Nov-2017 23:50:52 UTC] PHP   3. array_values() /home/ubuntu/workspace/Sound-Recognition/ACRCloud.php:54
+[08-Nov-2017 06:19:28 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/src/ACRCloud.php on line 38
+[08-Nov-2017 06:19:28 UTC] PHP Stack trace:
+[08-Nov-2017 06:19:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/src/upload.php:0

@@ -26,13 +26,13 @@ class ACRCloud{
     	     echo "file was uploaded to server<br>";
     	 }
     	 
-    	 if(!$_FILES['file']['error'])
+    	 if($_FILES['file']['error'])
     	 {
-    	     echo "there is an error in the file<br>";
+    	     echo "there is no error in the file<br>";
     	 }
     	 
-    	 echo "last error: " . json_last_error() . "<br><br>";
-        echo  "last error message: " . json_last_error_msg() ."<br><br>";
+        
+        var_dump($_FILES);
 
         
         if(isset($_FILES['file']) and !$_FILES['file']['error'])
