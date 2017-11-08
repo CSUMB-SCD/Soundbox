@@ -1,3 +1,13 @@
+html{
+  height: 99.5%;
+  width: 99.5%;
+  border: thin solid white;
+  background-image: url(../images/backgroundImage.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
