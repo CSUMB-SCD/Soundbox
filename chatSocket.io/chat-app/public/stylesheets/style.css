@@ -17,9 +17,40 @@ a {
   color: #00B7FF;
 }
 
+
+/*title*/
 h1{
   border:thin solid black;
   background-color: white;
   padding: 3%;
   position: center;
 }
+
+/*enter message*/
+label{
+  font-size: 12pt;
+  padding: .5%;
+  margin-top: 25%; 
+  border:thin solid black;
+  background-color: white;
+}
+
+/*message area*/
+#message{
+  font-size: 14pt;
+  margin-top: 2%;
+}
+
+/*send message button*/
+input{
+  font-size: 12pt;
+  margin: 1%;
+}
+
+/*chat area*/
+#chat-area{
+  border: thin solid black;
+  background-color: white;
+  padding: 3%;
+}
+

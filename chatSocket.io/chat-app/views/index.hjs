@@ -19,8 +19,8 @@
     <div id="chat-area"></div>
   
     <form id="messageForm">
-      <label>Enter Message</label>
-      <textarea id="message"></textarea>
+
+      <textarea id="message" placeholder="type message here"></textarea>
       <br>
       <input type="submit" value="Send Message">
     </form>
