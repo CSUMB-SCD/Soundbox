@@ -16,3 +16,10 @@ body {
 a {
   color: #00B7FF;
 }
+
+h1{
+  border:thin solid black;
+  background-color: white;
+  padding: 3%;
+  position: center;
+}
