@@ -39,6 +39,7 @@ label{
 #message{
   font-size: 14pt;
   margin-top: 2%;
+  width: 300px;
 }
 
 /*send message button*/
@@ -57,3 +58,19 @@ input{
   max-height: 350px;
 }
 
+/*area displaying number connected*/
+#numConnected{
+  border: thin solid black;
+  background: white;
+  height: 25px;
+  width: auto;
+  float: right;
+  margin-top: .5%;
+  padding: 1%;
+}
+
+#messageForm{
+  height: 200px;
+  width: 300px;
+  float: left
+}
