@@ -28,7 +28,7 @@ class ACRCloud{
     	 
     	 if($_FILES['file']['error'])
     	 {
-    	     echo "there is error in the file<br>";
+    	     echo "there is an error in the file<br>";
     	 }
     	 
         
@@ -46,9 +46,6 @@ class ACRCloud{
         else
         {
             echo "There was a problem with generating song.<br><br>";
-            
-            echo "last error: " . json_last_error() . "<br><br>";
-             echo  "last error message: " . json_last_error_msg() ."<br><br>";
             return false;   
         }
         
