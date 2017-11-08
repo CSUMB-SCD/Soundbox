@@ -20,6 +20,19 @@ class ACRCloud{
     {
         if(!is_dir("recordings"))
     	    $res = mkdir("recordings",0777); 
+    	    
+    	 if(isset($_FILES['file']))
+    	 {
+    	     echo "file was uploaded to server<br>";
+    	 }
+    	 
+    	 if(!$_FILES['file']['error'])
+    	 {
+    	     echo "there is an error in the file<br>";
+    	 }
+    	 
+    	 echo "last error: " . json_last_error() . "<br><br>";
+        echo  "last error message: " . json_last_error_msg() ."<br><br>";
 
         
         if(isset($_FILES['file']) and !$_FILES['file']['error'])
@@ -33,8 +46,13 @@ class ACRCloud{
         else
         {
             echo "There was a problem with generating song.<br><br>";
+            
+            echo "last error: " . json_last_error() . "<br><br>";
+             echo  "last error message: " . json_last_error_msg() ."<br><br>";
             return false;   
         }
+        
+
     }
     
     public function makeAPICall()
