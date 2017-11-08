@@ -28,7 +28,7 @@ class ACRCloud{
     	 
     	 if($_FILES['file']['error'])
     	 {
-    	     echo "there is no error in the file<br>";
+    	     echo "there is error in the file<br>";
     	 }
     	 
         
