@@ -17,6 +17,7 @@ var ChatApp = window.React.createClass({
             
             messages.push(msg);
             self.setState({messages: messages});
+            console.log(self.state.messages);
         });
     },
     
