@@ -53,7 +53,7 @@ input{
   background-color: white;
   padding: 3%;
   overflow-y: scroll;
-  height: 400px;
-  max-height: 400px;
+  height: 350px;
+  max-height: 350px;
 }
 
