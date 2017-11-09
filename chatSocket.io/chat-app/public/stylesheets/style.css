@@ -56,22 +56,23 @@ input{
   overflow-y: scroll;
   height: 350px;
   max-height: 350px;
-  width: 50%;
+  width: 45%;
+  float: left;
 }
 
 /*area displaying number connected*/
 #numConnected{
   border: thin solid black;
   background: white;
-  height: 25px;
-  width: auto;
+  height: 350px;
+  max-height: 350px;
+  width: 40%;
   float: right;
-  margin-top: .5%;
-  padding: 1%;
+  padding: 3%;
+  overflow-y: scroll;
 }
 
 #messageForm{
   height: 200px;
   width: 300px;
-  float: left
 }
