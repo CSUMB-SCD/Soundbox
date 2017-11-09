@@ -1,6 +1,0 @@
-{
-  "name": "chatApp",
-  "description": "Simulates a chat room",
-  "keywords": ["node","express","static"],
-  "image": "heroku/nodejs"
-}
