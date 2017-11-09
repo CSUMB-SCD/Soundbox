@@ -9,7 +9,7 @@ html{
 }
 
 body {
-  padding: 50px;
+  padding: 40px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -50,26 +50,31 @@ input{
 
 /*chat area*/
 #chat-area{
+  font-size: 20px;
   border: thin solid black;
   background-color: white;
   padding: 3%;
+  display: inline-block;
   overflow-y: scroll;
-  height: 350px;
+  height: 300px;
   max-height: 350px;
-  width: 45%;
+  width: 70%;
   float: left;
+
 }
 
 /*area displaying number connected*/
 #numConnected{
   border: thin solid black;
   background: white;
-  height: 350px;
+  height: 300px;
   max-height: 350px;
-  width: 40%;
+  width: 15%;
   float: right;
   padding: 3%;
   overflow-y: scroll;
+  display: inline-block;
+
 }
 
 #messageForm{
