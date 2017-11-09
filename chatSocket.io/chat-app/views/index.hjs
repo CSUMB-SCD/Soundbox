@@ -16,7 +16,7 @@
   
     <h1><center>{{ subTitle }}</center></h1>
     
-    <div id="chat-area" placeholder="Chat area"></div>
+    <div id="chat-area" placeholder="Chat area"></div><div id="numConnected">Number of Connected: </div>
   
     <div id="numConnected">Number of Connected: </div>
   
