@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+
+$_SESSION["dirCreated"] = false;
+
 class ACRCloud{
     
     private $apiResponse;
@@ -19,7 +23,14 @@ class ACRCloud{
     public function generateSong()
     {
         if(!is_dir("recordings"))
+        {
     	    $res = mkdir("recordings",0777); 
+    	    echo "recordings directory was created<br>";
+    	    $_SESSION["dirCreated"] = true;
+        }
+        else{
+            echo "recodings directory created? = " . $_SESSION["dirCreated"];
+        }
     	    
     	 if(isset($_FILES['file']))
     	 {
