@@ -22,6 +22,9 @@
 
       <textarea id="message" placeholder="type message here"></textarea>
       <br>
+      <label>Username:</label>
+      <input type="text" id="username" name="name">
+      <br>
       <input type="submit" value="Send Message">
     </form>
     
@@ -34,12 +37,14 @@
             var socket = io.connect(); 
             
             var $messageForm = $("#messageForm"); 
-            var $message = $("#message"); 
+            var $message = $("#message");
+            var $username = $("#username");
             var $chat = $("#chat-area"); 
             var $numConnected = $("#numConnected");
             
             $messageForm.submit(function(e) {
-                e.preventDefault(); 
+                e.preventDefault();
+                socket.emit('send message', $username.val()); 
                 socket.emit('send message', $message.val()); 
                 $message.val(''); 
             }); 
