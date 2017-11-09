@@ -16,7 +16,7 @@
   
     <h1><center>{{ subTitle }}</center></h1>
     
-    <div id="chat-area" placeholder="Chat area"></div>
+    <div id="chat-area" placeholder="Chat area"></div><div id="numConnected">Number of Connected: </div>
   
     <form id="messageForm">
 
@@ -28,7 +28,6 @@
       <input type="submit" value="Send Message">
     </form>
     
-    <div id="numConnected">Number of Connected: </div>
     
     <script>
   
