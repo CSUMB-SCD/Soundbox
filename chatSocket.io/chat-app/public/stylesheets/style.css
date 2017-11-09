@@ -56,6 +56,7 @@ input{
   overflow-y: scroll;
   height: 350px;
   max-height: 350px;
+  width: 50%;
 }
 
 /*area displaying number connected*/

@@ -49,7 +49,10 @@
             }); 
             
             socket.on('numberOfConections', function(data){
-              console.log("Number of connections: " + data.numberOfConections);
+              $numConnected.html('<div>Number of connections: ' + data.numberOfConections + '</div>'); 
+            });
+            
+            socket.on('decrementNumConnected', function(data){
               $numConnected.html('<div>Number of connections: ' + data.numberOfConections + '</div>'); 
             });
             
