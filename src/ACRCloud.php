@@ -22,6 +22,7 @@ class ACRCloud{
     
     public function generateSong()
     {
+        var_dump($_POST);
         if(!is_dir("recordings"))
         {
     	    $res = mkdir("recordings",0777); 
