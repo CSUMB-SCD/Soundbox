@@ -70,7 +70,7 @@ class ACRCloud{
     
     public function makeAPICall()
     {
-        $command = escapeshellcmd("python /home/ubuntu/workspace/ACRCloud/linux/x86-64/python2.7/test.py recordings/" . $this -> song);
+        $command = escapeshellcmd("python test.py recordings/" . $this -> song);
         $output = shell_exec($command);
         unlink("recordings/" . $this -> song);
         
