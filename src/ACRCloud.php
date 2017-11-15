@@ -22,7 +22,7 @@ class ACRCloud{
     
     public function generateSong()
     {
-        var_dump($_POST);
+
         if(!is_dir("recordings"))
         {
     	    $res = mkdir("recordings",0777); 
@@ -45,6 +45,10 @@ class ACRCloud{
     	 
         
         var_dump($_FILES);
+        //ini_set('upload_tmp_dir','/home/ubuntu/workspace/src/uploadFolder'); 
+        
+        //echo "TEMP DIR: ". sys_get_temp_dir(). "<br>";
+        //var_dump($_POST);
 
         
         if(isset($_FILES['file']) and !$_FILES['file']['error'])
@@ -69,6 +73,8 @@ class ACRCloud{
         $command = escapeshellcmd("python /home/ubuntu/workspace/ACRCloud/linux/x86-64/python2.7/test.py recordings/" . $this -> song);
         $output = shell_exec($command);
         unlink("recordings/" . $this -> song);
+        
+        echo "OUTPUT IS: ". $output;
        
 
         $string = str_replace('\n', '', $output);

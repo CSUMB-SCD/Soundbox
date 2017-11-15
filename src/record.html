@@ -57,7 +57,7 @@
   
     __log('Recording...');
     
-    setTimeout(stopRecording, 13000);
+    setTimeout(stopRecording, 3000);
     console.log("After five seconds");
   }
   
@@ -93,13 +93,13 @@
   	   var url = (window.URL || window.webkitURL).createObjectURL(blob);
       console.log("url created in uploadAudio(): " + url);
 
-      var data = new FormData();
-      data.append('file', blob);
+      var rawData = new FormData();
+      rawData.append('file', blob);
 
       $.ajax({
         url :  "upload.php",
         type: 'POST',
-        data: data,
+        data: rawData,
         contentType: false,
         processData: false,
         success: function(data) {
