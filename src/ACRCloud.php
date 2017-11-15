@@ -71,6 +71,7 @@ class ACRCloud{
     public function makeAPICall()
     {
         $command = escapeshellcmd("python test.py recordings/" . $this -> song);
+        echo "command is: ". $command;
         $output = shell_exec($command);
         unlink("recordings/" . $this -> song);
         
