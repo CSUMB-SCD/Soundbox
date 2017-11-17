@@ -1,0 +1,5 @@
+[17-Nov-2017 06:26:35 UTC] PHP Fatal error:  Call to undefined function ACRCloud\acrcloud_create_fingerprint_by_filebuffer() in /home/ubuntu/workspace/acrcloud_sdk_php/linux/x86-64/php55/acrcloud_recognizer.php on line 313
+[17-Nov-2017 06:26:35 UTC] PHP Stack trace:
+[17-Nov-2017 06:26:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/acrcloud_sdk_php/linux/x86-64/php55/test.php:0
+[17-Nov-2017 06:26:35 UTC] PHP   2. ACRCloud\ACRCloudRecognizer->recognizeByFileBuffer() /home/ubuntu/workspace/acrcloud_sdk_php/linux/x86-64/php55/test.php:15
+[17-Nov-2017 06:26:35 UTC] PHP   3. ACRCloud\ACRCloudExtrTool::createFingerprintByFileBuffer() /home/ubuntu/workspace/acrcloud_sdk_php/linux/x86-64/php55/acrcloud_recognizer.php:91
