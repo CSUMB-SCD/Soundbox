@@ -71,7 +71,7 @@ class ACRCloud{
     public function makeAPICall()
     {
         $command = escapeshellcmd("php test.php recordings/" . $this -> song);
-        echo "command is: ". $command;
+        //echo "command is: ". $command;
         $output = shell_exec($command);
         unlink("recordings/" . $this -> song);
         
