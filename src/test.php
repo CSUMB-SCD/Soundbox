@@ -1,3 +1,4 @@
+#!/usr/local/bin/php
 <?php namespace ACRCloud;
     include_once('acrcloud_recognizer.php');
 
@@ -9,7 +10,7 @@
         'recognize_type' => ACRCloudRecognizeType::ACR_OPT_REC_AUDIO // ACR_OPT_REC_AUDIO/ACR_OPT_REC_HUMMING/ACR_OPT_REC_BOTH
     );
     $re = new ACRCloudRecognizer($config);
-    print $re->recognizeByFile($argv[1], 0, 10);
+    //print $re->recognizeByFile($argv[1], 0, 10);
 
     $content = file_get_contents($argv[1]);
     print $re->recognizeByFileBuffer($content, 0, 10);
