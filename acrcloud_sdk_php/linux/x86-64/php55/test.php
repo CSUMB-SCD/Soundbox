@@ -1,3 +1,4 @@
+#!/usr/local/bin/php
 <?php namespace ACRCloud;
     include_once('acrcloud_recognizer.php');
 

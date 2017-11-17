@@ -73,7 +73,7 @@ class ACRCloud{
         $command = escapeshellcmd("php /home/ubuntu/workspace/acrcloud_sdk_php/linux/x86-64/php55/test.php recordings/" . $this -> song);
         echo "command is: ". $command;
         $output = shell_exec($command);
-        //unlink("recordings/" . $this -> song);
+        unlink("recordings/" . $this -> song);
         
         echo "OUTPUT IS: ". $output;
        
