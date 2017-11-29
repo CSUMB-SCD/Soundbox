@@ -16,8 +16,5 @@
    //display youtube data
    echo"youtube data: ";
     print_r($acr -> getYoutubeData());     
-    //$acr -> setSpotifyData("Hello world");
-    
-    //echo $acr -> getSpotifyData();
     
 ?>
