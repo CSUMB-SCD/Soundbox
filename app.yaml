@@ -1,0 +1,14 @@
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /js
+  static_dir: src/js
+  
+- url: /upload.php
+  script: src/upload.php
+
+- url: /.*
+  script: src/index.php
+

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 
-<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>SoundBox</title>
@@ -39,12 +37,7 @@
   function startUserMedia(stream) {
     var input = audio_context.createMediaStreamSource(stream);
     __log('Media stream created.');
-
-    // Uncomment if you want the audio to feedback directly
-    //input.connect(audio_context.destination);
-    //__log('Input connected to audio context destination.');
     
-  
   
     recorder = new Recorder(input);
     __log('Recorder initialised.');
@@ -72,19 +65,6 @@
     
     recorder.clear();
   }
-  
-/*
-  function stopRecording(button) {
-    recorder && recorder.stop();
-    button.disabled = true;
-    button.previousElementSibling.disabled = false;
-    __log('Stopped recording.');
-    
-    // create WAV download link using audio data blob
-    createDownloadLink();
-    recorder.clear();
-  }
-  */
   
   	function uploadAudio()
   	{
@@ -166,4 +146,3 @@
 
   <script src="js/recorder.js"></script>
 </body>
-</html>
