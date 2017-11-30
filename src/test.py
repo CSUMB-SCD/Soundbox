@@ -29,5 +29,5 @@ if __name__ == '__main__':
 
     buf = open(sys.argv[1], 'rb').read()
     #recognize by file_audio_buffer that read from file path, and skip 0 seconds from from the beginning of sys.argv[1].
-    print re.recognize_by_filebuffer(buf, 0, 10)
+    print re.recognizepython_by_filebuffer(buf, 0, 10)
 
