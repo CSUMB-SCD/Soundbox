@@ -82,12 +82,16 @@ class ACRCloud{
     public function makeAPICall()
     {
         //prepare bash shell command through shell through php acr functions and song attribute as an argument
-        $command = escapeshellcmd("python ACRCloudPy/linux/x86-64/python2.7/test.py recordings/" . $this -> song);
+        //$command = escapeshellcmd("python ACRCloudPy/linux/x86-64/python2.7/test.py recordings/" . $this -> song);
         //echo "command is: ". $command;
         
         //execute command
-        $output = shell_exec($command);
+        $output = system("python ACRCloudPy/linux/x86-64/python2.7/test.py recordings/" . $this -> song, $return_value); //shell_exec($command);
         
+        if($return_value == 0)
+        {
+            echo "There was an error in system call.";
+        }
         //after execute command remove song from recordings directory to allow multiple requests from different people
         unlink("recordings/" . $this -> song);
         
