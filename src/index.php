@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 
-<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>SoundBox</title>
@@ -39,12 +37,7 @@
   function startUserMedia(stream) {
     var input = audio_context.createMediaStreamSource(stream);
     __log('Media stream created.');
-
-    // Uncomment if you want the audio to feedback directly
-    //input.connect(audio_context.destination);
-    //__log('Input connected to audio context destination.');
     
-  
   
     recorder = new Recorder(input);
     __log('Recorder initialised.');
@@ -57,7 +50,7 @@
   
     __log('Recording...');
     
-    setTimeout(stopRecording, 13000);
+    setTimeout(stopRecording, 7000);
     console.log("After five seconds");
   }
   
@@ -73,19 +66,6 @@
     recorder.clear();
   }
   
-/*
-  function stopRecording(button) {
-    recorder && recorder.stop();
-    button.disabled = true;
-    button.previousElementSibling.disabled = false;
-    __log('Stopped recording.');
-    
-    // create WAV download link using audio data blob
-    createDownloadLink();
-    recorder.clear();
-  }
-  */
-  
   	function uploadAudio()
   	{
   	  recorder && recorder.exportWAV(function(blob)
@@ -93,13 +73,13 @@
   	   var url = (window.URL || window.webkitURL).createObjectURL(blob);
       console.log("url created in uploadAudio(): " + url);
 
-      var data = new FormData();
-      data.append('file', blob);
+      var rawData = new FormData();
+      rawData.append('file', blob);
 
       $.ajax({
         url :  "upload.php",
         type: 'POST',
-        data: data,
+        data: rawData,
         contentType: false,
         processData: false,
         success: function(data) {
@@ -166,4 +146,3 @@
 
   <script src="js/recorder.js"></script>
 </body>
-</html>

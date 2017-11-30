@@ -11,9 +11,9 @@ from acrcloud.recognizer import ACRCloudRecognizeType
 
 if __name__ == '__main__':
     config = {
-        'host':'identify-us-west-2.acrcloud.com',
-        'access_key':'67ee53dd67467002d2ebb2faa4b70d0f',
-        'access_secret':'Ky7WBO6JLQVc9sXqv1f7EADT12fiNN6YvF3yCiXG',
+        'host':'XXXXXXXX',
+        'access_key':'XXXXXXXX',
+        'access_secret':'XXXXXXXX',
         'recognize_type': ACRCloudRecognizeType.ACR_OPT_REC_AUDIO, # you can replace it with [ACR_OPT_REC_AUDIO,ACR_OPT_REC_HUMMING,ACR_OPT_REC_BOTH], The SDK decide which type fingerprint to create accordings to "recognize_type".
         'debug':False,
         'timeout':10 # seconds
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     re = ACRCloudRecognizer(config)
 
     #recognize by file path, and skip 0 seconds from from the beginning of sys.argv[1].
-    #print re.recognize_by_file(sys.argv[1], 0, 10)
+    print re.recognize_by_file(sys.argv[1], 0, 10)
 
     buf = open(sys.argv[1], 'rb').read()
     #recognize by file_audio_buffer that read from file path, and skip 0 seconds from from the beginning of sys.argv[1].
