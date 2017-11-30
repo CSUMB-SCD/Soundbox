@@ -511,7 +511,7 @@ class YoutubeDl
 
     private function createProcess(array $arguments = [])
     {
-        array_unshift($arguments, $this->binPath ?: 'youtube-dl');
+        array_unshift($arguments, $this->binPath);
 
         $process = new Process($arguments);
         $process->setEnv(['LANG' => 'en_US.UTF-8']);
