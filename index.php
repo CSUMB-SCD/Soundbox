@@ -65,7 +65,7 @@
         'output' => '%(title)s.%(ext)s',
     ]);
     $dl->setBinPath(__DIR__ . "/bin/youtube-dl");
-    $dl->setDownloadPath(__DIR__ . '/Audio');
+    $dl->setDownloadPath(__DIR__ . '/audio');
     
     $video = $dl->download('https://www.youtube.com/watch?v=6z227WiJeJM');
 
