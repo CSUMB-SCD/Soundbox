@@ -4,155 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba40cdf6777ae2df966bb8ba26416308",
+    "content-hash": "0a2a90257f049e9e30021fdd5f6854df",
     "packages": [
         {
-            "name": "norkunas/youtube-dl-php",
-            "version": "v0.3.5",
+            "name": "athlon1600/youtube-downloader",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/norkunas/youtube-dl-php.git",
-                "reference": "971dc4d734c83e5fe8a6e2f2e76f58f9806a613b"
+                "url": "https://github.com/Athlon1600/youtube-downloader.git",
+                "reference": "50fc4f3ac7e2daf002b9ce21aee95252f87b3ae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/norkunas/youtube-dl-php/zipball/971dc4d734c83e5fe8a6e2f2e76f58f9806a613b",
-                "reference": "971dc4d734c83e5fe8a6e2f2e76f58f9806a613b",
+                "url": "https://api.github.com/repos/Athlon1600/youtube-downloader/zipball/50fc4f3ac7e2daf002b9ce21aee95252f87b3ae9",
+                "reference": "50fc4f3ac7e2daf002b9ce21aee95252f87b3ae9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4",
-                "symfony/options-resolver": "^2.7|~3.0",
-                "symfony/process": "^2.7|~3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.5"
+                "ext-curl": "*"
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "YoutubeDl\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tomas Norkūnas",
-                    "email": "norkunas.tom@gmail.com"
-                }
-            ],
-            "description": "youtube-dl wrapper for php",
-            "keywords": [
-                "youtube",
-                "youtube-dl"
-            ],
-            "time": "2017-10-12T07:04:26+00:00"
-        },
-        {
-            "name": "symfony/options-resolver",
-            "version": "v3.3.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "623d9c210a137205f7e6e98166105625402cbb2f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/623d9c210a137205f7e6e98166105625402cbb2f",
-                "reference": "623d9c210a137205f7e6e98166105625402cbb2f",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\OptionsResolver\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
+                "files": [
+                    "src/YouTubeDownloader.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony OptionsResolver Component",
-            "homepage": "https://symfony.com",
+            "description": "PHP powered alternative for youtube-dl",
             "keywords": [
-                "config",
-                "configuration",
-                "options"
+                "download youtube",
+                "download youtube videos",
+                "youtube downloader"
             ],
-            "time": "2017-11-05T15:47:03+00:00"
-        },
-        {
-            "name": "symfony/process",
-            "version": "v3.3.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
-                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-11-13T15:31:11+00:00"
+            "time": "2017-02-26T19:17:47+00:00"
         }
     ],
     "packages-dev": [],
