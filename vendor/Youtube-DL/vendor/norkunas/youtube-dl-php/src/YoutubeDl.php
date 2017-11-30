@@ -239,7 +239,7 @@ class YoutubeDl
 
         try {
             $process->mustRun(is_callable($this->debug) ? $this->debug : null);
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             throw $this->handleException($e);
         }
 

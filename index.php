@@ -67,7 +67,7 @@
     $dl->setBinPath(__DIR__ . "/bin/youtube-dl");
     $dl->setDownloadPath(__DIR__ . '/Audio');
     
-    $video = $dl->download('https://www.youtube.com/watch?v=oDAw7vW7H0c');
+    $video = $dl->download('https://www.youtube.com/watch?v=6z227WiJeJM');
 
     echo "<h1>Finished</h1>";
 ?>

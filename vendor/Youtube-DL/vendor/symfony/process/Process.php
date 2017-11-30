@@ -230,6 +230,7 @@ class Process implements \IteratorAggregate
      */
     public function mustRun(callable $callback = null/*, array $env = array()*/)
     {
+        system("echo 'Must Run'");
         if (!$this->enhanceSigchildCompatibility && $this->isSigchildEnabled()) {
             throw new RuntimeException('This PHP has been compiled with --enable-sigchild. You must use setEnhanceSigchildCompatibility() to use this method.');
         }
