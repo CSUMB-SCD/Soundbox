@@ -82,7 +82,7 @@ class ACRCloud{
     public function makeAPICall()
     {
         //prepare bash shell command through shell through php acr functions and song attribute as an argument
-        $command = escapeshellcmd("php test.php recordings/" . $this -> song);
+        $command = escapeshellcmd("python ACRCloudPy/linux/x86-64/python2.7/test.py recordings/" . $this -> song);
         //echo "command is: ". $command;
         
         //execute command
