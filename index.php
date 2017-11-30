@@ -64,6 +64,7 @@
         'audio-quality' => 0, // best
         'output' => '%(title)s.%(ext)s',
     ]);
+    $dl->setBinPath(__DIR__ . "/bin/youtube-dl");
     $dl->setDownloadPath(__DIR__ . '/Audio');
     
     $video = $dl->download('https://www.youtube.com/watch?v=oDAw7vW7H0c');
