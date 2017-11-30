@@ -93,15 +93,13 @@ class ACRCloud{
         //after execute command remove song from recordings directory to allow multiple requests from different people
         unlink("recordings/" . $this -> song);
         
-        //echo result from api to console
-        echo "OUTPUT IS: ". $output;
        
 
         //remove new line characters and backlashes from api response to decode into json and split into array format
         $string = str_replace('\n', '', $output);
         $string = str_replace('\"', '', $output);
         
-        //display string to console
+        //display api response to console
         echo $string;
     
         //convert string into a json format
