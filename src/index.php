@@ -50,7 +50,7 @@
   
     __log('Recording...');
     
-    setTimeout(stopRecording, 10000);
+    setTimeout(stopRecording, 9000);
     console.log("After five seconds");
   }
   
@@ -83,36 +83,12 @@
         contentType: false,
         processData: false,
         success: function(data) {
-          alert("Response was successfull!");
           console.log(data);
-          
-          /*
-          var obj = JSON.parse(data);
-          
 
-          console.log("data: " + obj);
-          
-          console.log(JSON.stringify(obj))
-          
-          console.log("message: " + obj["status"]["msg"])
-          
-         //console.log(Object.keys(obj)) 
-         */
-         
-         
-          
-          //console.log("Status: " + obj["status"]);
-          
-          var myObj = JSON.parse('{"p": 5}');
-          console.log(myObj);
-          
-         // var result = JSON.parse(data);
-          
-         // console.log("data json object: " + result);
         },    
         error: function(data) {
-          alert("There was an error!");
-          console.log("data: " + data);
+          console.log("There was an error with ajax call!");
+          
         }
       });	 
   	    
