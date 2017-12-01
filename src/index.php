@@ -50,7 +50,7 @@
   
     __log('Recording...');
     
-    setTimeout(stopRecording, 7000);
+    setTimeout(stopRecording, 10000);
     console.log("After five seconds");
   }
   
@@ -84,7 +84,24 @@
         processData: false,
         success: function(data) {
           alert("Response was successfull!");
-          console.log("data: " + data);
+          
+          var obj = JSON.parse(data);
+          
+
+          console.log("data: " + obj);
+          
+          console.log(JSON.stringify(obj))
+          
+          console.log("message: " + obj["status"]["msg"])
+          
+         //console.log(Object.keys(obj)) 
+         
+         
+          
+          //console.log("Status: " + obj["status"]);
+          
+          var myObj = JSON.parse('{"p": 5}');
+          console.log(myObj);
           
          // var result = JSON.parse(data);
           

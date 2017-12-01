@@ -35,25 +35,7 @@ class ACRCloud{
     	    $_SESSION["dirCreated"] = true;
         }
     	    
-    	 //if file was uploaded to server
-    	 if(isset($_FILES['file']))
-    	 {
-    	     echo "file was uploaded to server<br>";
-    	 }
-    	 
-    	 //check to see if there is an error in file
-    	 if($_FILES['file']['error'])
-    	 {
-    	     echo "there is an error in the file<br>";
-    	 }
-    	 
-        
-        //display all information of FILE array
-        var_dump($_FILES);
-        //ini_set('upload_tmp_dir','/home/ubuntu/workspace/src/uploadFolder'); 
-        
-        //echo "TEMP DIR: ". sys_get_temp_dir(). "<br>";
-        //var_dump($_POST);
+
 
         //if there is no error and file is present
         if(isset($_FILES['file']) and !$_FILES['file']['error'])
@@ -71,7 +53,7 @@ class ACRCloud{
         //if there was an error display an error message and return false
         else
         {
-            echo "There was a problem with generating song.<br><br>";
+            //echo "There was a problem with generating song.<br><br>";
             return false;   
         }
         
@@ -100,19 +82,30 @@ class ACRCloud{
         $string = str_replace('\"', '', $output);
         
         //display api response to console
-        echo $string;
+        //echo $string;
     
         //convert string into a json format
-        $this -> apiResponse = json_decode($string, true);
+        //$this -> apiResponse = json_decode($string);
+        
+        $this -> apiResponse = $string;
+        
+        echo $this -> apiResponse;
+        
+        //header('Content-Type: application/json');
+        //json_encode($this->apiResponse);
+        
+        //echo $this -> apiResponse;
+        //var_dump($this->apiResponse);
+        
         
         //breakdown json format into array to obtain values by indexing
-        $array = array_values($this -> apiResponse);
+        //$array = array_values($this -> apiResponse);
         
         //store spotify data
-        $this -> spotifyData = $array[1]["music"][0]['external_metadata']['spotify'];
+        //$this -> spotifyData = $array[1]["music"][0]['external_metadata']['spotify'];
 
         //store youtubeData
-        $this -> youtubeData = $array[1]["music"][0]['external_metadata']['youtube'];
+        //$this -> youtubeData = $array[1]["music"][0]['external_metadata']['youtube'];
 
     }
     

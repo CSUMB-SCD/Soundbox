@@ -9,12 +9,12 @@
         $acr -> makeAPICall(); 
         
     //display spotify data
-    echo "spotify data: ";
-    print_r($acr -> getSpotifyData());
+    //echo "spotify data: ";
+    //print_r($acr -> getSpotifyData());
    
    
    //display youtube data
-   echo"youtube data: ";
-    print_r($acr -> getYoutubeData());     
+   //echo"youtube data: ";
+    //print_r($acr -> getYoutubeData());     
     
 ?>
