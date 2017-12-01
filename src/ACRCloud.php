@@ -63,6 +63,8 @@ class ACRCloud{
     //this function will make the api call to get metadata of song
     public function makeAPICall()
     {
+        var_dump($_FILES);
+        
         //prepare bash shell command through shell through php acr functions and song attribute as an argument
         $command = escapeshellcmd("python ACRCloudPy/linux/x86-64/python2.7/test.py recordings/" . $this -> song);
         //echo "command is: ". $command;
