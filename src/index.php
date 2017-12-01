@@ -84,7 +84,9 @@
         processData: false,
         success: function(data) {
           alert("Response was successfull!");
+          console.log(data);
           
+          /*
           var obj = JSON.parse(data);
           
 
@@ -95,6 +97,7 @@
           console.log("message: " + obj["status"]["msg"])
           
          //console.log(Object.keys(obj)) 
+         */
          
          
           
