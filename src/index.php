@@ -50,7 +50,7 @@
   
     __log('Recording...');
     
-    setTimeout(stopRecording, 7000);
+    setTimeout(stopRecording, 9000);
     console.log("After five seconds");
   }
   
@@ -83,16 +83,12 @@
         contentType: false,
         processData: false,
         success: function(data) {
-          alert("Response was successfull!");
-          console.log("data: " + data);
-          
-         // var result = JSON.parse(data);
-          
-         // console.log("data json object: " + result);
+          console.log(data);
+
         },    
         error: function(data) {
-          alert("There was an error!");
-          console.log("data: " + data);
+          console.log("There was an error with ajax call!");
+          
         }
       });	 
   	    

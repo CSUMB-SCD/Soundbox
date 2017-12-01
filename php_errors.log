@@ -271,3 +271,18 @@
 [30-Nov-2017 06:28:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/src/upload.php:0
 [30-Nov-2017 06:28:44 UTC] PHP   2. ACRCloud->makeAPICall() /home/ubuntu/workspace/src/upload.php:9
 [30-Nov-2017 06:28:44 UTC] PHP   3. array_values() /home/ubuntu/workspace/src/ACRCloud.php:114
+[01-Dec-2017 03:36:23 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/src/ACRCloud.php on line 115
+[01-Dec-2017 03:36:23 UTC] PHP Stack trace:
+[01-Dec-2017 03:36:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/src/upload.php:0
+[01-Dec-2017 03:38:07 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/src/ACRCloud.php on line 116
+[01-Dec-2017 03:38:07 UTC] PHP Stack trace:
+[01-Dec-2017 03:38:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/src/upload.php:0
+[01-Dec-2017 03:42:13 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/src/ACRCloud.php on line 120
+[01-Dec-2017 03:42:13 UTC] PHP Stack trace:
+[01-Dec-2017 03:42:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/src/upload.php:0
+[01-Dec-2017 03:59:36 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/src/ACRCloud.php on line 97
+[01-Dec-2017 03:59:36 UTC] PHP Stack trace:
+[01-Dec-2017 03:59:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/src/upload.php:0
+[01-Dec-2017 04:10:19 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/src/ACRCloud.php on line 99
+[01-Dec-2017 04:10:19 UTC] PHP Stack trace:
+[01-Dec-2017 04:10:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/src/upload.php:0
