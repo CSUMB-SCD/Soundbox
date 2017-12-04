@@ -4,7 +4,7 @@
     
     $audioLink = new YoutubeAudioLink();
     
-    echo $audioLink->getAudioLink('https://www.youtube.com/watch?v=mASbK1ZYwKw') . '<br>';
+    echo $audioLink->getAudioLink('https://www.youtube.com/watch?v=2VjFxuIiqRo') . '<br>';
     //var_dump($audioLink->getVidInfo());
     echo $audioLink->getYoutubePlayerVideo();
     echo "<br>";
@@ -14,7 +14,7 @@
 
 
 
-    echo system('./DwnAudioMp3');
+    //echo system('./DwnAudioMp3');
 /** ------------------------------------------
  *  Function Usage
  *  ------------------------------------------
