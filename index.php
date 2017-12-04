@@ -4,12 +4,21 @@
     
     $audioLink = new YoutubeAudioLink();
     
-    echo $audioLink->getAudioLink('https://www.youtube.com/watch?v=yC9bCd1-btk') . '<br>';
+    echo $audioLink->getAudioLink('https://www.youtube.com/watch?v=mASbK1ZYwKw') . '<br>';
     //var_dump($audioLink->getVidInfo());
     echo $audioLink->getYoutubePlayerVideo();
     echo "<br>";
-    echo $audioLink->getAudioBySearching('thor ragnarok soundtrack');
-    echo $audioLink->getYoutubePlayerVideo();
-    
-?>
+    // echo $audioLink->getAudioBySearching('thor ragnarok soundtrack');
+    // echo $audioLink->getYoutubePlayerVideo();
+    // echo "<br>"; 
+
+
+
+    echo shell_exec('./DwnAudioMp3');
+/** ------------------------------------------
+ *  Function Usage
+ *  ------------------------------------------
+ */
+//$bytes = downloadFile(shell_exec("youtube-dl --add-metadata --extract-audio --audio-format mp3 --audio-quality 0 https://www.youtube.com/watch?v=mASbK1ZYwKw"), 'thorragnarok.mp3');
+
 
