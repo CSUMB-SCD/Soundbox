@@ -63,6 +63,8 @@
         'audio-format' => 'mp3',
         'audio-quality' => 0, // best
         'output' => '%(title)s.%(ext)s',
+        'add-metadata' => true,
+        'sleep-interval' => 1
     ]);
     $dl->setBinPath(__DIR__ . "/bin/youtube-dl");
     $dl->setDownloadPath(__DIR__ . '/audio');

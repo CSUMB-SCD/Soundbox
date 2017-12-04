@@ -335,7 +335,7 @@ class YoutubeDl
             'referer' => 'string',
             'add-header' => 'array',
             'bidi-workaround' => 'bool',
-            'sleep-interval' => 'int',
+            'sleep-interval' => 'int', //look into this option
             // Video Format Options
             'format' => 'string',
             'prefer-free-formats' => 'bool',
@@ -371,7 +371,7 @@ class YoutubeDl
             'prefer-ffmpeg' => 'bool',
             'ffmpeg-location' => 'string',
             'exec' => 'string',
-            'convert-subtitles' => 'string',
+            'convert-subtitles' => 'string'
         ];
 
         $resolver->setDefined(array_keys($options));
@@ -535,7 +535,7 @@ class YoutubeDl
             $url,
             '--no-playlist',
             '--print-json',
-            '--ignore-config',
+            '--ignore-config'
         ];
 
         foreach ($this->options as $option => $value) {
