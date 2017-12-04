@@ -42,7 +42,7 @@ class YoutubeAudioLink {
         $videoId = $this->mYoutube->parseVIdFromURL($yLink);
         $this->mVideoInfo = $this->mYoutube->getVideoInfo($videoId);
         
-        return shell_exec($this->mBinPath . $this->mAudioSettings . $yLink);
+        return system($this->mBinPath . $this->mAudioSettings . $yLink);
     }
     
     public function getYoutubeLinkFromSearchKeys($searchKey) {
