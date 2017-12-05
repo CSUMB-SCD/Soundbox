@@ -1,5 +1,7 @@
 <?php
 
+//include the file for spotify and youtube
+
 class ACRCloud{
     
     //class attributes
@@ -7,6 +9,7 @@ class ACRCloud{
     private $spotifyData;
     private $youtubeData;
     private $song;
+    //declare a variables for spotify and youtube class
     
     //default constructor
     public function __construct() {
@@ -14,6 +17,7 @@ class ACRCloud{
             $this -> spotifyData  = "";
             $this -> youtubeData = "";
             $this -> song = "";
+            //instantiate spotify and youtube class
         }
     
     //this function  will get song send from the client
@@ -80,6 +84,9 @@ class ACRCloud{
         $localArray["spotify_artists"] = $this -> apiResponse["metadata"]["music"][0]["spotify"]["artists"];
         $localArray["spotify_track_id"] = $this -> apiResponse["metadata"]["music"][0]["spotify"]["track"]["id"];
         $localArray["youtube_id"] = $this -> apiResponse["metadata"]["music"][0]["youtube"]["vid"];
+        
+        //use the keys in $localArray values for spotify class and youtube class.
+        //the result of each class store them in $responseArray. For spotify soter in $responseArray["recommendation_list"], and for youtube in $responseArray["audio_link"]
 
         header('Content-Type: application/json');
         echo json_encode($responseArray);
