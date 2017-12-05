@@ -32,24 +32,26 @@ class YoutubeAudioLink {
         
         $youtubeLink = $this->getYoutubeLinkFromSearchKeys($searchKey);
         
-        return $this->getAudioLink($youtubeLink);
+        return $this->getAudioLinkById($youtubeLink);
 
     }
     
-    //Use this function once you have the youtube link to the video.
-    public function getAudioLink($yLink) {
+    //Use this function once you have the youtube ID to the video.
+    public function getAudioLinkById($yLinkID) {
         
-        $videoId = $this->mYoutube->parseVIdFromURL($yLink);
-        $this->mVideoInfo = $this->mYoutube->getVideoInfo($videoId);
+        $yLink = self::YOUTUBE_LINK . $yLinkID;
+        $this->mVideoInfo = $this->mYoutube->getVideoInfo($yLinkID);
         
         return shell_exec($this->mBinPath . $this->mAudioSettings . $yLink);
     }
     
+    //This creates a youtube by getting the first results you get from searching using keywords.
     public function getYoutubeLinkFromSearchKeys($searchKey) {
         
-        return self::YOUTUBE_LINK . $this->getVideoIdBySearching($searchKey);
+        return $this->getVideoIdBySearching($searchKey);
     }
     
+    //Grabs the ID of the first search result
     public function getVideoIdBySearching($searchKey){
         
         $videoList = $this->mYoutube->searchVideos($searchKey);

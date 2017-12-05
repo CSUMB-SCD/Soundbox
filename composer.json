@@ -1,5 +1,9 @@
 {
-    "require": {
-        "madcoda/php-youtube-api": "^1.2"
-    }
+"require": {
+    "php": "^5.5.9",
+    "madcoda/php-youtube-api": "^1.2"
+  },
+"require-dev": {
+		"heroku/heroku-buildpack-php": "*"
+	}
 }
