@@ -14,7 +14,7 @@
 
 
 
-    echo system('./DwnAudioMp3');
+    echo shell_exec('./DwnAudioMp3');
 /** ------------------------------------------
  *  Function Usage
  *  ------------------------------------------
