@@ -84,7 +84,7 @@
         processData: false,
         success: function(data) {
           console.log(data);
-
+          __log("Youtube link: " + data['audio_link']);
         },    
         error: function(data) {
           console.log("There was an error with ajax call!");
