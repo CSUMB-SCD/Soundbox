@@ -22,7 +22,7 @@ class YoutubeAudioLink {
         
         $this->mVideoInfo = null;
         $this->mBinPath = "bin/";
-        $this->mAudioSettings = "youtube-dl --add-metadata --extract-audio --audio-format mp3 --audio-quality 0 -o '" . __DIR__ . "/../Audio/%(title)s-%(id)s.%(ext)s' ";
+        $this->mAudioSettings = "youtube-dl --add-metadata --extract-audio --audio-format mp3 --audio-quality 0 -g ";
         
         $this->mYoutube = new Madcoda\Youtube\Youtube(array('key' => $this->mYoutubebeApiKey));
     }

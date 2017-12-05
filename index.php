@@ -8,13 +8,13 @@
     //var_dump($audioLink->getVidInfo());
     echo $audioLink->getYoutubePlayerVideo();
     echo "<br>";
-    // echo $audioLink->getAudioBySearching('thor ragnarok soundtrack');
-    // echo $audioLink->getYoutubePlayerVideo();
-    // echo "<br>"; 
+    echo $audioLink->getAudioBySearching('thor ragnarok soundtrack');
+    echo $audioLink->getYoutubePlayerVideo();
+    echo "<br>"; 
 
 
 
-    //echo system('./DwnAudioMp3');
+    echo system('./DwnAudioMp3');
 /** ------------------------------------------
  *  Function Usage
  *  ------------------------------------------
