@@ -1,5 +1,5 @@
 #!/bin/bash
 
-bin/youtube-dl -k --add-metadata --extract-audio --audio-format mp3 --audio-quality 5 -o './Audio/%(title)s-%(id)s.%(ext)s' https://www.youtube.com/watch?v=mASbK1ZYwKw
+bin/youtube-dl -k --add-metadata --extract-audio --audio-format mp3 --audio-quality 5 -o './Audio/%(title)s-%(id)s.%(ext)s' https://www.youtube.com/watch?v=2VjFxuIiqRo
 
 echo "Finished"
