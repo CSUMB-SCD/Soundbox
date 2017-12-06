@@ -12,8 +12,6 @@ class Spotify{
     
     public function __construct(){
         
-        // $this->client_id = "3280e5bf6e1e463bb3a258975648262b";
-        // $this->client_secret = "7a445fb2e97f410889489173cabcfe20";
         $this->client_id = getenv('SPOTIFY_CLIENT_ID');
         $this->client_secret = getenv('SPOTIFY_CLIENT_SECRET');
         $this->access_token = "";
