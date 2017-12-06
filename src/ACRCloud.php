@@ -13,7 +13,6 @@ class ACRCloud{
     private $youtubeData;
     private $song;
     //declare a variables for spotify and youtube class
-    private $Spotify;
     
     
     //default constructor
@@ -23,7 +22,6 @@ class ACRCloud{
             $this -> youtubeData = "";
             $this -> song = "";
             //instantiate spotify and youtube class
-            $this->Spotify = new Spotify();
         }
     
     //this function  will get song send from the client
@@ -79,11 +77,25 @@ class ACRCloud{
 
         //this array will hold all data for client
         $responseArray["title"] = $this -> apiResponse["metadata"]["music"][0]["title"];
-        $responseArray["artists"] = $this -> apiResponse["metadata"]["music"][0]["artists"];//this is an array
+        $responseArray["artists"] = $this -> apiResponse["metadata"]["music"][0]["artists"][0]["name"];//this is an array
         $responseArray["release_date"] = $this -> apiResponse["metadata"]["music"][0]["release_date"];
         $responseArray["album"] = $this -> apiResponse["metadata"]["music"][0]["album"]["name"];
         $responseArray["audio_link"] = "www.google.com";
-        $responseArray["recommendation_list"] = array("hello", "my name is", "twerk");
+        
+        //Spotify retrieve artist id
+        
+        //declare class
+        $Spotify = new Spotify();
+        
+        //retrieve token
+        $Spotify->retrieveAccessToken();
+        
+        //get artist id and set it
+        $getThisArtist = $this->apiResponse["metadata"]["music"][0]["artists"][0]["name"];
+        $artistID = $Spotify->getArtistId( $getThisArtist );
+        
+        $responseArray["recommendation_list"] = $Spotify->retrieveRecommendedArtists();
+        
         $responseArray["genre"] = $this -> apiResponse["metadata"]["music"][0]["genres"];//this is an array
         
         //this array will hold data for spotify and youtube

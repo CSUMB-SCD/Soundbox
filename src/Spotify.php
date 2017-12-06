@@ -113,6 +113,8 @@ class Spotify{
         $artistID = $parsed_json['artists']['items'][0]['id'];
         
         $this->artist_id = $artistID;
+        
+        return $artistID;
     }
   
     public function retrieveRecommendedArtists(){
@@ -145,6 +147,8 @@ class Spotify{
                 $parsedRecommended_json['artists'][1]['name'],
                 $parsedRecommended_json['artists'][2]['name']
             );
+            
+        return $this->recommendation_artists;
     }
   
     public function retrieveRecommendedArtistsImages(){
