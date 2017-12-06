@@ -82,7 +82,6 @@
         data: rawData,
         contentType: false,
         processData: false,
-        async: false,
         success: function(data) {
           console.log(data);
           __log("Title: " + data['title']);
