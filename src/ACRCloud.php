@@ -1,6 +1,7 @@
 <?php
 
 //include the file for spotify and youtube
+include("Spotify.php");
 
 class ACRCloud{
     
@@ -10,6 +11,8 @@ class ACRCloud{
     private $youtubeData;
     private $song;
     //declare a variables for spotify and youtube class
+    public $Spotify;
+    
     
     //default constructor
     public function __construct() {
@@ -18,6 +21,7 @@ class ACRCloud{
             $this -> youtubeData = "";
             $this -> song = "";
             //instantiate spotify and youtube class
+            $this->Spotify = new Spotify();
         }
     
     //this function  will get song send from the client
