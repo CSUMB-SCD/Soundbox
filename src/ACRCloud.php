@@ -11,7 +11,7 @@ class ACRCloud{
     private $youtubeData;
     private $song;
     //declare a variables for spotify and youtube class
-    public $Spotify;
+    private $Spotify;
     
     
     //default constructor
