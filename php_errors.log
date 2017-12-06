@@ -286,3 +286,12 @@
 [01-Dec-2017 04:10:19 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/src/ACRCloud.php on line 99
 [01-Dec-2017 04:10:19 UTC] PHP Stack trace:
 [01-Dec-2017 04:10:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/src/upload.php:0
+[05-Dec-2017 04:22:15 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Error 400 No filter selected. Expected one of: id, chart, myRated : missingRequiredParameter' in /home/ubuntu/workspace/vendor/madcoda/php-youtube-api/src/Youtube.php:552
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/madcoda/php-youtube-api/src/Youtube.php(145): Madcoda\Youtube\Youtube->decodeSingle('{? "error": {? ...')
+#1 /home/ubuntu/workspace/src/YoutubeAudioLink.php(43): Madcoda\Youtube\Youtube->getVideoInfo(NULL)
+#2 /home/ubuntu/workspace/src/ACRCloud.php(94): YoutubeAudioLink->getAudioLinkById(NULL)
+#3 /home/ubuntu/workspace/src/upload.php(9): ACRCloud->makeAPICall()
+#4 {main}
+  thrown in /home/ubuntu/workspace/vendor/madcoda/php-youtube-api/src/Youtube.php on line 552
+[05-Dec-2017 04:53:12 UTC] PHP Fatal error:  Call to undefined function getAudioLinkById() in /home/ubuntu/workspace/src/index.php on line 23
