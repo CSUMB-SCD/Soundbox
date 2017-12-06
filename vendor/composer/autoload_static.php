@@ -4,11 +4,32 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0ac241fecccaa3f68226594790bb33e0
+class ComposerStaticInit108a93b5dc633440e9566c2694e89b2d
 {
+    public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'Madcoda\\Youtube\\' => 16,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Madcoda\\Youtube\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/madcoda/php-youtube-api/src',
+        ),
+    );
+
+    public static $classMap = array (
+        'Madcoda\\compat' => __DIR__ . '/..' . '/madcoda/php-youtube-api/src/compat.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit108a93b5dc633440e9566c2694e89b2d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit108a93b5dc633440e9566c2694e89b2d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit108a93b5dc633440e9566c2694e89b2d::$classMap;
 
         }, null, ClassLoader::class);
     }

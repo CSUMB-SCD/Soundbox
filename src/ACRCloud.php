@@ -2,6 +2,8 @@
 
 //include the file for spotify and youtube
 include("Spotify.php");
+require __DIR__ . "/YoutubeAudioLink.php";
+
 
 class ACRCloud{
     
@@ -91,7 +93,19 @@ class ACRCloud{
         
         //use the keys in $localArray values for spotify class and youtube class.
         //the result of each class store them in $responseArray. For spotify soter in $responseArray["recommendation_list"], and for youtube in $responseArray["audio_link"]
-
+        
+        $youtube = new YoutubeAudioLink();
+        //Setting the path for the youtube-dl library
+        $youtube->setBinPath("../bin/");
+        
+        if(!empty($localArray["youtube_id"])) {
+            $yLink = $youtube->getAudioLinkById($localArray["youtube_id"]);
+            $responseArray["audio_link"] = $yLink;
+        }else{
+            $yLink = $youtube->getAudioBySearching($responseArray["title"]);
+            $responseArray["audio_link"] = $yLink;
+        }
+        
         header('Content-Type: application/json');
         echo json_encode($responseArray);
 
