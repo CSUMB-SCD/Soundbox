@@ -31,8 +31,7 @@
   <h3>Recently Identified Songs</h3>
   <ul id="recordingslist"></ul>
   
-  <p><hr></p>
-  <h3>Log</h3>
+  
   
 
   <pre id="log"></pre>
@@ -53,11 +52,11 @@
 
   function startUserMedia(stream) {
     var input = audio_context.createMediaStreamSource(stream);
-    __log('Media stream created.');
+   // __log('Media stream created.');
     
   
     recorder = new Recorder(input);
-    __log('Recorder initialised.');
+   // __log('Recorder initialised.');
   }
 
   function startRecording(button) {
@@ -65,7 +64,7 @@
     button.disabled = true;
     button.nextElementSibling.disabled = false;
   
-    __log('<p><hr width="60%">Capturing Audio...');
+    __log('<p><hr></p>Analyzing Audio...');
     
     document.getElementById("loadDiv").style.display="block";
     setTimeout("hide()", 9000);
@@ -111,8 +110,8 @@
         success: function(data) {
           console.log(data);
          // __log("Audio Captured<p><hr>");
-         // __log("Title: " + data['title']);
-          //__log("Youtube link: " + data['audio_link']);
+        // __log( data['title']);
+        //__log( data['audio_link']);
         },    
         error: function(data) {
           console.log("There was an error with ajax call!");
@@ -156,8 +155,8 @@
       window.URL = window.URL || window.webkitURL;
       
       audio_context = new AudioContext;
-      __log('Audio context set up.');
-      __log('navigator.getUserMedia ' + (navigator.getUserMedia ? 'available.' : 'not present!'));
+     // __log('Audio context set up.');
+     // __log('navigator.getUserMedia ' + (navigator.getUserMedia ? 'available.' : 'not present!'));
     } catch (e) {
       alert('No web audio support in this browser!');
     }
