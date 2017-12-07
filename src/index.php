@@ -17,20 +17,30 @@
 </head>
 <body>
 
-  <div id="mainTitle"><h1>Soundbox</h1></div>
+  <div id="mainTitle"><h1>SoundBox</h1></div>
 
   <div id="detectBox">
-  <h1>Detect Song</h1>
 
   <button id = "start" onclick="startRecording(this);">Detect Song</button>
+ 
+ 
+ <br></br>
 
-  
-  <h2>Recently Identified Songs</h2>
+
+ 
+  <h3>Recently Identified Songs</h3>
   <ul id="recordingslist"></ul>
   
-  <h2>Log</h2>
+  <p><hr></p>
+  <h3>Log</h3>
+  
+
   <pre id="log"></pre>
 
+    <div id = "loadDiv" style="display:none"><img id ="loading" src = "img/ellipsis.gif"></div><br>
+
+
+  
   <script>
   function __log(e, data) {
     log.innerHTML += "\n" + e + " " + (data || '');
@@ -55,10 +65,19 @@
     button.disabled = true;
     button.nextElementSibling.disabled = false;
   
-    __log('Recording...');
+    __log('<p><hr width="60%">Capturing Audio...');
     
+    document.getElementById("loadDiv").style.display="block";
+    setTimeout("hide()", 9000);
+
     setTimeout(stopRecording, 9000);
     console.log("After five seconds");
+  }
+  
+  function hide() 
+  {
+    document.getElementById("loadDiv").style.display="none";
+    __log('Audio Captured');
   }
   
   function stopRecording()
@@ -91,8 +110,9 @@
         processData: false,
         success: function(data) {
           console.log(data);
-          __log("Title: " + data['title']);
-          __log("Youtube link: " + data['audio_link']);
+         // __log("Audio Captured<p><hr>");
+         // __log("Title: " + data['title']);
+          //__log("Youtube link: " + data['audio_link']);
         },    
         error: function(data) {
           console.log("There was an error with ajax call!");
@@ -111,6 +131,7 @@
       var li = document.createElement('li');
       var au = document.createElement('audio');
       var hf = document.createElement('a');
+      
       
       au.controls = true;
       au.src = url;
