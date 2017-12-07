@@ -2,6 +2,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>SoundBox</title>
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+
   <style type='text/css'>
     ul { list-style: none; }
     #recordingslist audio { display: block; margin-bottom: 10px; }
