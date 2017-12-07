@@ -1,7 +1,11 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 	<title>SoundBox</title>
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <link href="https://fonts.googleapis.com/css?family=Biryani" rel="stylesheet">
+
   <style type='text/css'>
     ul { list-style: none; }
     #recordingslist audio { display: block; margin-bottom: 10px; }
@@ -13,6 +17,9 @@
 </head>
 <body>
 
+  <div id="mainTitle"><h1>Soundbox</h1></div>
+
+  <div id="detectBox">
   <h1>Detect Song</h1>
 
   <button id = "start" onclick="startRecording(this);">Detect Song</button>
@@ -142,4 +149,7 @@
   </script>
 
   <script src="js/recorder.js"></script>
+  
+  
+  </div>
 </body>
