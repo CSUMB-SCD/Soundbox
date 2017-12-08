@@ -26,8 +26,7 @@
  
  <br></br>
  
-  <div id="artist">Artist: </div>
-  <div id="song">Song: </div>
+  
  
   <h3>Recently Identified Songs</h3>
   <ul id="recordingslist"></ul>
@@ -38,6 +37,9 @@
   <pre id="log"></pre>
 
     <div id = "loadDiv" style="display:none"><img id ="loading" src = "img/ellipsis.gif"></div><br>
+    <div id="artist"></div>
+    <div id="song"></div>
+    <div id="recommend"></div>
 
 
   
@@ -111,8 +113,10 @@
         success: function(data) {
           console.log(data);
           
-         var song = document.getElementById("song").innerHTML = data['title'];
-         var artist = document.getElementById("artist").innerHTML = data['artists'];
+        var artist = document.getElementById("artist").innerHTML = "Artist: " . data['artists'];
+        var song = document.getElementById("song").innerHTML = "Song " . data['title'];
+        var recommend = document.getElementById("recommend").innerHTML = "Recommendation List: " . data['recommendation_list'];
+
 
        
          
