@@ -113,9 +113,9 @@
         success: function(data) {
           console.log(data);
           
-        var artist = document.getElementById("artist").innerHTML = "Artist: " . data['artists'];
-        var song = document.getElementById("song").innerHTML = "Song " . data['title'];
-        var recommend = document.getElementById("recommend").innerHTML = "Recommendation List: " . data['recommendation_list'];
+        var artist = document.getElementById("artist").innerHTML = data['artists'];
+        var song = document.getElementById("song").innerHTML =  data['title'];
+        var recommend = document.getElementById("recommend").innerHTML = data['recommendation_list'];
 
 
        
