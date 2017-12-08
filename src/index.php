@@ -26,8 +26,8 @@
  
  <br></br>
  
-  <div id="artist"></div>
-  <div id="song"></div>
+  <div id="artist">Artist: </div>
+  <div id="song">Song: </div>
  
   <h3>Recently Identified Songs</h3>
   <ul id="recordingslist"></ul>
@@ -120,6 +120,7 @@
         },    
         error: function(data) {
           console.log("There was an error with ajax call!");
+          __log('Song not found!');
           
         }
       });	 
