@@ -25,8 +25,9 @@
  
  
  <br></br>
-
-
+ 
+  <div id="artist"></div>
+  <div id="song"></div>
  
   <h3>Recently Identified Songs</h3>
   <ul id="recordingslist"></ul>
@@ -109,9 +110,13 @@
         processData: false,
         success: function(data) {
           console.log(data);
-         // __log("Audio Captured<p><hr>");
-        // __log( data['title']);
-        //__log( data['audio_link']);
+          
+         var song = document.getElementById("song").innerHTML = data['title'];
+         var artist = document.getElementById("artist").innerHTML = data['artists'];
+
+       
+         
+         
         },    
         error: function(data) {
           console.log("There was an error with ajax call!");
@@ -146,6 +151,7 @@
     
   
   }
+  
 
   window.onload = function init() {
     try {
