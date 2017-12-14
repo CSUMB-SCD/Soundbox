@@ -17,7 +17,7 @@
             $youtube = new YoutubeAudioLink('AIzaSyDymolX0EqHJgpPdJYAZkqJ5illswu8wr0');
             $youtube->setBinPath("../bin/");
             $this->assertStringMatchesFormat('%a',$youtube->getAudioBySearching('thor ragnarok soundtrack'));
-            $this->assertNotNull($youtube->getAudioBySearching('thor ragnarok soundtrack'));
+            $this->assertNull($youtube->getAudioBySearching('thor ragnarok soundtrack'));
             $this->assertNotNull($youtube->getAudioBySearching(''));
 
         }
