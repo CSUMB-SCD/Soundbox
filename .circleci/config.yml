@@ -5,6 +5,7 @@ jobs:
        - image: circleci/php:5
      steps:
        - checkout
-     test:
-       override:
-         - ./my_testing_script.sh
+       - run: echo "hello world"
+            name: Testing YoutuAudioLink Class
+            command: ./my_testing_script.sh
+            shell: /bin/bash
