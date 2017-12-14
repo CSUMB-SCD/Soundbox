@@ -15,10 +15,10 @@ jobs:
       - run: mkdir -p ~/phpunitD
       - run: wget https://phar.phpunit.de/phpunit-5.7.phar
       - run: chmod +x phpunit-5.7.phar
-      - run: mv phpunit-5.7.phar ~/phpunit.phar
+      - run: mv phpunit-5.7.phar usr/local/bin/phpunit
       - run:
           name: Running Tests
-          command: ~/phpunit
+          command: phpunit --log-junit phpunitD/junit.xml tests
           background: true
 
 workflows:
