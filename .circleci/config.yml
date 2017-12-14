@@ -14,9 +14,9 @@ jobs:
       - checkout
       - run: mkdir -p ~/phpunit
       - run:
-       name: Running Tests
-       command: phpunit --log-junit phpunit/junit.xml tests
-       background: true
+          name: Running Tests
+          command: phpunit --log-junit phpunit/junit.xml tests
+          background: true
 
 workflows:
   version: 2
