@@ -6,8 +6,14 @@ jobs:
      steps:
        - checkout
        - run: php --version
-       - run: mkdir phpunit
-       - run:
+
+       test:
+        docker:
+          - image: circleci/circleci/php:5
+        steps:
+          - checkout
+          - run: mkdir -p ~/phpunit
+          - run:
            name: Running Tests
            command: phpunit --log-junit phpunit/junit.xml tests
            background: true
