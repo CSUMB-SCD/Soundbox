@@ -7,9 +7,9 @@ jobs:
        - ~/phpunit
      steps:
        - checkout
-       - run: php --version
        - run:
           shell: /bin/bash
+          name: Running Tests
           command: |
             mkdir -p ~/phpunitD
             wget https://phar.phpunit.de/phpunit-5.7.phar
@@ -21,20 +21,6 @@ jobs:
            path: ~/phpunit
        - store_artifacts:
            path: ~/phpunit 
-
-   test:
-    docker:
-      - image: circleci/php:5
-    steps:
-      - checkout
-      - run: mkdir -p ~/phpunitD
-      - run: wget https://phar.phpunit.de/phpunit-5.7.phar
-      - run: chmod +x phpunit-5.7.phar
-      - run: mv phpunit-5.7.phar usr/local/bin/phpunit
-      - run:
-          name: Running Tests
-          command: phpunit --log-junit phpunitD/junit.xml tests
-          background: true
 
 workflows:
   version: 2
