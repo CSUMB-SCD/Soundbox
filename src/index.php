@@ -193,17 +193,17 @@
         // artist
         document.getElementById("artistDiv").style.visibility="visible";
         var div = document.getElementById('artistDiv');
-        div.innerHTML += artist;
+        div.innerHTML = artist;
         
         // title
         document.getElementById("titleDiv").style.visibility="visible";
         var div = document.getElementById('titleDiv');
-        div.innerHTML += title;
+        div.innerHTML = title;
         
         // reccomendations
         document.getElementById("recommendationsDiv").style.visibility="visible";
         var div = document.getElementById('recommendationsDiv');
-        div.innerHTML += recommendations;
+        div.innerHTML = recommendations;
         
       }
     
