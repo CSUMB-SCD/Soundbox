@@ -9,7 +9,7 @@ jobs:
 
    test:
     docker:
-      - image: circleci/circleci/php:5
+      - image: circleci/php:5
     steps:
       - checkout
       - run: mkdir -p ~/phpunit
