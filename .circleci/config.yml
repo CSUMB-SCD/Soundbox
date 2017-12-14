@@ -5,7 +5,7 @@ jobs:
        - image: circleci/php:5
      steps:
        - checkout
-       run: echo "Test"
+       - run: echo "Test"
      test:
       override:
         - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
