@@ -8,8 +8,11 @@ jobs:
        - run: php --version
        - run: 
           command: |
-            mkdir -p ~/phpunit
-            phpunit --log-junit ~/phpunit/junit.xml tests
+            mkdir -p ~/phpunitD
+            wget https://phar.phpunit.de/phpunit-5.7.phar
+            chmod +x phpunit-5.7.phar
+            mv phpunit-5.7.phar phpunit
+            phpunit --log-junit ~/phpunitD/junit.xml tests
           when: always
        - store_test_results:
            path: ~/phpunit
