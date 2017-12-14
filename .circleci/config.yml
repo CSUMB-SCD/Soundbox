@@ -5,6 +5,10 @@ jobs:
        - image: circleci/php:5
      steps:
        - checkout
-       - run: phpunit
-
+       - run: php --version
+       - run: mkdir phpunit
+       - run:
+           name: Running Tests
+           command: phpunit --log-junit phpunit/junit.xml tests
+           background: true
        
