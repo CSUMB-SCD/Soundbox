@@ -5,7 +5,7 @@ jobs:
        - image: circleci/php:5
      steps:
        - checkout
-       - run: echo "hello world"
-            name: Testing YoutuAudioLink Class
-            command: ./my_testing_script.sh
+       - run:
+            name: Testing application
+            command: ./run_tests.sh
             shell: /bin/bash
