@@ -5,7 +5,4 @@ jobs:
        - image: circleci/php:5
      steps:
        - checkout
-       - run:
-            name: Testing application
-            command: ./run_tests.sh
-            shell: /bin/bash
+       - run: echo "hello world"

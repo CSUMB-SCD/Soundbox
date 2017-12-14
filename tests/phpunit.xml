@@ -1,0 +1,7 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="Testing Audio Link" colors="true">
+      <file>LinkTest.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>
