@@ -1,20 +1,14 @@
 version: 2
+jobs:
+   build:
+     docker:
+       - image: circleci/php:5
+     steps:
+       - checkout
+       run: echo php --version
+       run: mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+       run:
+         name: Running Tests
+         command: phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml tests
 
-machine:
- php:
-   version: 5.6
-build:
- steps:
-   - checkout
-   - run: php --version
-   
-dependencies:
-  post:
-    - wget https://phar.phpunit.de/phpunit-5.7.phar
-    - chmod +x phpunit-5.7.phar
-    - mv phpunit-5.7.phar phpunit
-
-test:
- override:
-   - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
-   - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml tests
+       
