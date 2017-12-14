@@ -6,7 +6,7 @@ SoundBox will then display the songs' artist, title and a list of recommended ar
 
 
 
-### How to run
+## How to run
 
 1. Run the project, select "Sound-Recognition" and then "index.php".<br/>
 2. You will now be greeted with the homepage.<br/>
@@ -18,12 +18,12 @@ SoundBox will then display the songs' artist, title and a list of recommended ar
 
 
 
-### CircleCI 
+## CircleCI 
 
 https://circleci.com/gh/CSUMB-SCD/Soundbox
 
 
-### Lessons Learned
+## Lessons Learned
 
 The lessons learned from this project is to always deploy as soon as possible. <br/> 
 Our project would always work with C9 but as soon as we would deploy on C9, nothing would work. <br/>
