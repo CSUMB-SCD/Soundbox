@@ -1,0 +1,51 @@
+body
+{
+     background-color: #474747;
+     font-family: 'Biryani', sans-serif;
+
+    
+}
+
+#mainTitle
+{
+    
+    font-size:35px;
+    color: #6ab0ff;
+  
+    height: 150px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+#detectBox
+{
+    background-color: #fff;
+    border-radius: 25px;
+    width: 350px;
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+#start {
+    background-color: #57a8f9; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+      border-radius: 34px;
+
+}
+#start:hover {
+  background: #2f7fce;
+  text-decoration: none;
+}
+
+hr{
+     text-align: center;   
+}
