@@ -5,7 +5,10 @@ jobs:
        - image: circleci/php:5
      steps:
        - checkout
-       run: echo Creating Dir
-       run: mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+       - run: php --version
+       - run: mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+       - run:
+           name: Running Tests
+           command: phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml tests
 
        
