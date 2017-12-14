@@ -18,12 +18,11 @@ jobs:
       - run: mv phpunit-5.7.phar ~/phpunit.phar
       - run:
           name: Running Tests
-          command: ~/phpunit --log-junit phpunitD/junit.xml tests
+          command: ~/phpunit
           background: true
 
 workflows:
   version: 2
   build_and_test:
     jobs:
-      - build
       - test
