@@ -7,8 +7,5 @@ jobs:
        - checkout
        run: echo php --version
        run: mkdir -p $CIRCLE_TEST_REPORTS/phpunit
-       run:
-         name: Running Tests
-         command: phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml tests
 
        
