@@ -17,7 +17,7 @@ How to run SoundBox:<br/>
 
 ***
 
-CircleCI 
+## CircleCI 
 https://circleci.com/gh/CSUMB-SCD/Soundbox
 
 ***
