@@ -8,16 +8,16 @@
     {
         public function testAudioLink() {
             $youtube = new YoutubeAudioLink('AIzaSyDymolX0EqHJgpPdJYAZkqJ5illswu8wr0');
-            $youtube->setBinPath("../bin/");
+            $youtube->setBinPath("bin/");
             $this->assertNull($youtube->getAudioLinkById(''));
             $this->assertStringMatchesFormat('%a',$youtube->getAudioLinkById('mASbK1ZYwKw'));
         }
         
         public function testSearchByKey() {
             $youtube = new YoutubeAudioLink('AIzaSyDymolX0EqHJgpPdJYAZkqJ5illswu8wr0');
-            $youtube->setBinPath("../bin/");
+            $youtube->setBinPath("bin/");
             $this->assertStringMatchesFormat('%a',$youtube->getAudioBySearching('thor ragnarok soundtrack'));
-            $this->assertNull($youtube->getAudioBySearching('thor ragnarok soundtrack'));
+            $this->assertNotNull($youtube->getAudioBySearching('thor ragnarok soundtrack'));
             $this->assertNotNull($youtube->getAudioBySearching(''));
 
         }
