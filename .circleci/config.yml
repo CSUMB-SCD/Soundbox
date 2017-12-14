@@ -5,7 +5,7 @@ jobs:
        - image: circleci/php:5
      steps:
        - checkout
-       run: echo php --version
+       run: echo Creating Dir
        run: mkdir -p $CIRCLE_TEST_REPORTS/phpunit
 
        
