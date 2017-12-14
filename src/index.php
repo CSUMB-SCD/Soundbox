@@ -53,6 +53,10 @@
     <!--loading gif-->
     <div id = "loadDiv" style="display:none"><img id ="loading" src = "img/ellipsis.gif"></div><br>
     
+    <!--link to heroku chat application-->
+    <a href="https://ancient-beach-64449.herokuapp.com/"><strong>Live Chat!</strong></a>
+    
+    
     <script>
       
       var audio_context;
