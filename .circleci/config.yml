@@ -6,6 +6,15 @@ jobs:
      steps:
        - checkout
        - run: php --version
+       - run: 
+          command: |
+            mkdir -p ~/phpunit
+            phpunit --log-junit ~/phpunit/junit.xml tests
+          when: always
+       - store_test_results:
+           path: ~/phpunit
+       - store_artifacts:
+           path: ~/phpunit 
 
    test:
     docker:
@@ -25,4 +34,4 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - test
+      - build
