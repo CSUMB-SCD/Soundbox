@@ -11,8 +11,8 @@ https://evening-peak-63595.herokuapp.com/src/index.php
 
 ## How to run
 
-1. Run the project, select "Sound-Recognition" and then "index.php".<br/>
-2. You will now be greeted with the homepage.<br/>
+1. Click on the link provided above.<br/>
+2. You will then be greeted with the homepage.<br/>
 3. Play a song.<br/>
 4. Press 'Detect song'.<br/>
 5. It will record the song being played for 5 seconds.<br/>
