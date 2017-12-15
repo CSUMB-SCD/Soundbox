@@ -48,11 +48,12 @@ We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to creat
 
 ## Developers
 
-| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub>Kent C. Dodds</sub>](https://kentcdodds.com)<br />
+| [<img src="https://avatars2.githubusercontent.com/u/14968874?s=400&v=4" width="100px;"/><br /><sub>@MarioMartinezA</sub>](https://kentcdodds.com)<br /> |
 
-@MarioMartinezA <br />
-DiegoAMedina <br />
-dariomolina93 <br />
-cm00100 <br />
+| [<img src="https://octodex.github.com/images/codercat.jpg" width="100px;"/><br /><sub>@DiegoAMedina</sub>](https://kentcdodds.com)<br /> |
+
+| [<img src="https://avatars0.githubusercontent.com/u/15005274?s=400&v=4" width="100px;"/><br /><sub>@dariomolina93</sub>](https://kentcdodds.com)<br /> |
+
+| [<img src="https://avatars3.githubusercontent.com/u/12014480?s=400&v=4" width="100px;"/><br /><sub>@cm00100</sub>](https://kentcdodds.com)<br /> |
 
 
