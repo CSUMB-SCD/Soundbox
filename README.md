@@ -51,6 +51,10 @@ After speaking with Utsab, he recommended we scope down our vision.
 Which we slowly began doing so and the project began to come together nicely.
 We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to create a nice web application.
 
+## Troubleshooting
+
+- If the song information does not appear after 10 seconds of recording the audio, increase the volume of the music or put the sounds of the music closer to the microphone.
+
 ## Developers
 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
@@ -64,7 +68,3 @@ We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to creat
 [<img src="https://avatars3.githubusercontent.com/u/12014480?s=400&v=4" width="100px;"/><br /><sub>@cm00100</sub>](https://github.com/cm00100)
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-## Troubleshooting
-
-- If the song information does not appear after 10 seconds of recording the audio, increase the volume of the music or put the sounds of the music closer to the microphone
