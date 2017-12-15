@@ -37,13 +37,12 @@ Communication is always a great feature to have in a team. <br/>
 The more you communicate, the smoother the project will come together. <br/>
 We stumbled through a lot of obstacles, but thanks to our communication we were able to overcome them. <br/>
 
-We also learned how to scope our project. <br/>
-Initially our project included a couple extra features. <br/>
-One of which was to allow the user to upload a mp3 and then they would receive and edited mp3 file
-with the correct name and title of the file provided. <br/>
-This particular feature was removed due to limitations from Heroku. <br/>
-With Heroku we have a certain limit of size file that may be uploaded. <br/>
-After speaking with Utsab, he recommended we scope down our vision. <br/>
-Which we slowly began doing so and the project began to come together nicely.<br/>
-We were able to combine three API's (ACRCloud, YouTube DL and Spotify) to create a nice web application. <br/>
+We also learned how to scope our project. 
+Initially, our project included a couple extra features. 
+One of which was to allow the user to upload an mp3 and then they would receive an edited mp3 file with the correct name and title of the file provided. 
+This particular feature was removed due to limitations from Heroku. 
+With Heroku, we have a certain limit of size file that may be uploaded. 
+After speaking with Utsab, he recommended we scope down our vision. 
+Which we slowly began doing so and the project began to come together nicely.
+We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to create a nice web application.
 
