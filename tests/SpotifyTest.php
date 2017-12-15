@@ -10,7 +10,6 @@
         public function testRetrieveAccessToken() {
             $Spotify = new Spotify();
             $this->assertNull( $Spotify->retrieveAccessToken() );
-            $this->assertNull("hello");
         }
         
         public function testGetClientId(){
