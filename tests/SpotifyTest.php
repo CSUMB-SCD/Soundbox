@@ -12,7 +12,15 @@
             $this->assertNull( $Spotify->retrieveAccessToken() );
         }
         
+        public function getClientId(){
+            $Spotify = new Spotify();
+            $this->assertNotNull( $Spotify->getClientId() );
+        }
         
+        public function getClientSecret(){
+            $Spotify = new Spotify();
+            $this->assertNotNull( $Spotify->getClientSecret() );
+        }
     }
     
 ?>
