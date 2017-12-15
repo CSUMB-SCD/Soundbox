@@ -22,10 +22,6 @@
             $this->assertNotNull( $Spotify->getClientSecret() );
         }
         
-        public function testGetArtistId(){
-            $Spotify = new Spotify();
-            $this->assertNotNull( $Spotify->getArtistId( "Calvin Harris" ) );
-        }
 
         public function retrieveRecommendedArtists(){
             $Spotify = new Spotify();
