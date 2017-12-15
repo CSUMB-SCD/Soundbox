@@ -25,6 +25,11 @@ https://evening-peak-63595.herokuapp.com/src/index.php
 
 https://circleci.com/gh/CSUMB-SCD/Soundbox
 
+CircleCI was difficult to setup since it had its own PHPUnit. After reading through the documentation
+I was able to override the CircleCi PHPUnit and make it run our version of PHPUnit. Once PHPUnit was
+downloaded to the root directory we were able to run the PHPUnit command. We also included a PHPUnit.XML
+that contains instructions for PHPUnit. The XML file includes the directory were all php test files are
+located. Also, the XML file instructs PHPUnit to run all tests inside the tests folder. 
 
 ## Lessons Learned
 
