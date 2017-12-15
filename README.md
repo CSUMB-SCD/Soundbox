@@ -35,4 +35,15 @@ For example, we had to cut down the time the user can upload the music sample. <
 Heroku limits the megabytes allowed to upload, but it does not throw an error. <br/>
 Communication is always a great feature to have in a team. <br/>
 The more you communicate, the smoother the project will come together. <br/>
-We stumled through a lot of obstacles, but thanks to our communication we were able to overcome them. <br/>
+We stumbled through a lot of obstacles, but thanks to our communication we were able to overcome them. <br/>
+
+We also learned how to scope our project. <br/>
+Initially our project included a couple extra features. <br/>
+One of which was to allow the user to upload a mp3 and then they would receive and edited mp3 file
+with the correct name and title of the file provided. <br/>
+This particular feature was removed due to limitations from Heroku. <br/>
+With Heroku we have a certain limit of size file that may be uploaded. <br/>
+After speaking with Utsab, he recommended we scope down our vision. <br/>
+Which we slowly began doing so and the project began to come together nicely.<br/>
+We were able to combine three API's (ACRCloud, YouTube DL and Spotify) to create a nice web application. <br/>
+
