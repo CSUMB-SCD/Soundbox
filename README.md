@@ -54,31 +54,7 @@ We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to creat
 ## Developers
 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
-| [<img src="https://avatars2.githubusercontent.com/u/14968874?s=400&v=4" width="100px;"/><br /><sub>@MarioMartinezA</sub>](https://github.com/MarioMartinezA) |
-
-| [<img src="https://octodex.github.com/images/codercat.jpg" width="100px;"/><br /><sub>@DiegoAMedina</sub>](https://github.com/DiegoAMedina) |
-
-| [<img src="https://avatars0.githubusercontent.com/u/15005274?s=400&v=4" width="100px;"/><br /><sub>@dariomolina93</sub>](https://github.com/dariomolina93) |
-
-| [<img src="https://avatars3.githubusercontent.com/u/12014480?s=400&v=4" width="100px;"/><br /><sub>@cm00100</sub>](https://github.com/cm00100) |
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub>Kent C. Dodds</sub>](https://kentcdodds.com)<br />💁 [📖](https://github.com/kentcdodds/all-contributors/commits?author=kentcdodds) 👀 📢 
-
-| [<img src="https://avatars.githubusercontent.com/u/6177621?v=3" width="100px;"/><br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[📖](https://github.com/kentcdodds/all-contributors/commits?author=bogas04) 👀 
-
-| [<img src="https://avatars.githubusercontent.com/u/1282980?v=3" width="100px;"/><br /><sub>Ben Briggs</sub>](http://beneb.info)<br />[📖](https://github.com/kentcdodds/all-contributors/commits?author=ben-eb) 👀 
-
-| [<img src="https://avatars.githubusercontent.com/u/2037007?v=3" width="100px;"/><br /><sub>James Monger</sub>](https://github.com/Jameskmonger)<br />[📖](https://github.com/kentcdodds/all-contributors/commits?author=Jameskmonger) 
-
-| [<img src="https://avatars.githubusercontent.com/u/3869412?v=3" width="100px;"/><br /><sub>Jeroen Engels</sub>](https://github.com/jfmengels)<br />[📖](https://github.com/kentcdodds/all-contributors/commits?author=jfmengels) 👀 🔧 
-
-| [<img src="https://avatars.githubusercontent.com/u/4249591?v=3" width="100px;"/><br /><sub>Chris Simpkins</sub>](https://github.com/chrissimpkins)<br />[📖](https://github.com/kentcdodds/all-contributors/commits?author=chrissimpkins) 👀 
-
-| [<img src="https://avatars.githubusercontent.com/u/153481?v=3" width="100px;"/><br /><sub>F. Hemberger</sub>](https://github.com/fhemberger)<br />[📖](https://github.com/kentcdodds/all-contributors/commits?author=fhemberger) 
-|
+| [<img src="https://avatars2.githubusercontent.com/u/14968874?s=400&v=4" width="100px;"/><br /><sub>@MarioMartinezA</sub>](https://github.com/MarioMartinezA) | [<img src="https://octodex.github.com/images/codercat.jpg" width="100px;"/><br /><sub>@DiegoAMedina</sub>](https://github.com/DiegoAMedina) | [<img src="https://avatars0.githubusercontent.com/u/15005274?s=400&v=4" width="100px;"/><br /><sub>@dariomolina93</sub>](https://github.com/dariomolina93) | [<img src="https://avatars3.githubusercontent.com/u/12014480?s=400&v=4" width="100px;"/><br /><sub>@cm00100</sub>](https://github.com/cm00100) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
