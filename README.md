@@ -53,6 +53,7 @@ We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to creat
 
 ## Developers
 
+<!-- ALL-CONTRIBUTORS-LIST:START -->
 [<img src="https://avatars2.githubusercontent.com/u/14968874?s=400&v=4" width="100px;"/><br /><sub>@MarioMartinezA</sub>](https://github.com/MarioMartinezA)
 
 [<img src="https://octodex.github.com/images/codercat.jpg" width="100px;"/><br /><sub>@DiegoAMedina</sub>](https://github.com/DiegoAMedina)
@@ -61,4 +62,4 @@ We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to creat
 
 [<img src="https://avatars3.githubusercontent.com/u/12014480?s=400&v=4" width="100px;"/><br /><sub>@cm00100</sub>](https://github.com/cm00100)
 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
