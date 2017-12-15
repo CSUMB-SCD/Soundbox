@@ -48,9 +48,11 @@ We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to creat
 
 ## Developers
 
-@MarioMartinezA
-DiegoAMedina
-dariomolina93
-cm00100
+| [<img src="https://avatars.githubusercontent.com/u/1500684?v=3" width="100px;"/><br /><sub>Kent C. Dodds</sub>](https://kentcdodds.com)<br />
+
+@MarioMartinezA <br />
+DiegoAMedina <br />
+dariomolina93 <br />
+cm00100 <br />
 
 
