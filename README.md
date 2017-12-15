@@ -46,6 +46,11 @@ After speaking with Utsab, he recommended we scope down our vision.
 Which we slowly began doing so and the project began to come together nicely.
 We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to create a nice web application.
 
+## Developers
 
+@MarioMartinezA
+DiegoAMedina
+dariomolina93
+cm00100
 
 
