@@ -61,4 +61,4 @@ We were able to combine three API's (ACRCloud, YouTube DL, and Spotify) to creat
 
 [<img src="https://avatars3.githubusercontent.com/u/12014480?s=400&v=4" width="100px;"/><br /><sub>@cm00100</sub>](https://github.com/cm00100)
 
-
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
